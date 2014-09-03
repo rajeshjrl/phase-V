@@ -1,0 +1,182 @@
+* {font-family: arial;font-size: 12px;}
+.top-frame-storename {font-family: arial; font-size: 14px; font-weight: bold;text-transform: uppercase;}
+.logout {color: #FFFFFF; font-family: arial; font-size: 12px; font-weight: bold; text-decoration: none;}
+.logout:hover {text-decoration:underline;}
+.left-menu-root {background: url(../images/left_menu_bg.gif); width: 200px; height: 32px; cursor: pointer; font-size: 14px;}
+.leftmenu-root-item {font-family: Arial; font-size: 14px; text-decoration: none; line-height:32px; cursor: pointer; padding-left: 12px; width: 100%;}
+.leftmenu-root-item-link {text-decoration: none; font-size: 14px; cursor: pointer; width: 200; height: 32px;}
+.leftmenu-submenu {background-color: #e6e3df; padding-top: 6px; padding-bottom: 6px; width: 200;}
+.leftmenu-submenu-item {font-family: Arial; font-size: 12px; line-height: 22px; text-decoration: none;}
+
+.leftmenu-selected {color: #1b6f08; font-weight: bold;}
+.leftmenu-unselected {color: #000000; }
+
+.breadcrumps {font-family: Arial; font-size: 12px;color: #1b6f08; font-weight: bold;}
+
+.form-manager-label {	color : #090909;
+                      font-size: 14px;
+                      font-family : sans-serif;
+                      height: 25px;
+}
+
+.form-manager-label label {	color : #000000;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-family : sans-serif;
+                            height: 25px;
+}
+
+.form-manager-input {
+    background-color :  #FFFFFF;
+    border : 1px solid #DFDFDF;
+    color : #000000;
+    font-size : 14px;
+    font-family : sans-serif;
+    font-weight : bold;
+}
+
+
+.validation-advice {
+    padding-bottom: 5px;
+    margin-left: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #FF3300;
+    font-weight: bold;
+}
+
+.custom-advice {
+    margin: 5px 0;
+    padding: 5px;
+    font-family: Arial;
+    background-color: #C8AA00;
+    color : #FFF;
+    font-weight: bold;
+    font-size: 12px;
+    clear: both;
+}
+
+.bold {font-weight: bold;}
+
+
+.action-notification-ok {
+    background: url(../images/action_notification_ok.gif) left top no-repeat;
+    background-color: #d0efc9;
+    padding-left: 55px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid a7c79f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.vertical-space {
+    height: 12px;
+    line-height: 12px;
+}
+
+.button-small {
+    background: url(../images/button_small_bg_left.gif) left top no-repeat;
+    height: 22px;
+}
+
+.button-small-link {
+    background: url(../images/button_small_bg_right.gif) right top no-repeat;
+    height: 22px;
+    line-height: 22px;
+}
+
+.button-small-link a{
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 25px;
+}
+
+.form-el-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.form-el-subcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b8c28;
+    padding:0;
+    margin:0;
+}
+
+
+.text-notification-ok {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+.form-el-edit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #044afd;
+}
+
+.table-buttons-line {
+    background-color: #d4d0c8;
+    height: 20px;
+    padding: 0 10px;
+}
+
+.table-buttons-line a {
+    color: #0012ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.table-buttons-line a:hover {
+    text-decoration: underline;
+}
+
+.hr{
+    background-color: #d4d0c8;
+    width: 100%;
+    height: 2px;
+    line-height: 2px;
+}
+
+
+.grid-tab {
+    background: url(../images/tab-right.png) no-repeat right;
+    height: 28px;
+}
+
+.grid-tab div{
+    background: url(../images/tab-left.png) no-repeat left;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    color: #77736b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.grid-tab div.active{
+    color: #488feb;
+    cursor: normal;
+}
+
+.success{
+    color:#009900;
+}
+
+.error{
+    color:#FF0000;
+}

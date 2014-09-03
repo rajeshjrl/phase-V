@@ -1,0 +1,34 @@
+.page_holder{
+    margin:0 auto;
+    width:1000px;
+}
+.page_inner{
+    width:100%;
+    display:inline-block;
+}
+
+.full_width_video, .full_width_image, .image_with_video{
+    width:100%;
+    display:inline-block;
+}
+
+.flexslider .slides > li{
+    position:relative;
+    width:100% !important;
+    height:300px !important;
+}
+.flex-direction-nav .flex-next{
+    right:-50px !important;
+}
+.flex-direction-nav .flex-prev{
+    left:-62px !important;
+}
+.image_with_video iframe{
+    position:absolute;
+    right:0;
+    top:0;
+}
+.image_with_video img{
+    width:100% !important;
+}
+

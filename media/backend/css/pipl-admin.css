@@ -1,0 +1,62 @@
+/* 
+    Document   : pipl-admin
+    Created on : 5 Oct, 2013, 11:25:14 AM
+    Author     : dev23
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*This is for all pages language management*/
+.error {
+    color: #BD4247;
+    width: 227px;
+}
+
+.dispNone{
+    display: none;
+}
+.dispshow{
+    display: block;
+    width: 100px;
+    margin: 0px;
+    padding-top: 50px;
+
+}
+.leb{ width:auto !important; background: #30B0C8; padding: 5px 10px; border-radius: 4px 4px 0px 0px; margin: 0px 3px; color: #333; }
+.leb_active{ width:auto !important; background: #333; padding: 5px 10px; border-radius: 4px 4px 0px 0px; margin: 0px 3px;}
+
+.cleditorMain{
+    width: 700px !important;
+    height: 250px;
+}
+
+/*This is for product manager drop box*/
+.ui-widget-header {
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+}
+
+/*This is for Roles Manager*/
+.controls ul li{
+    list-style:none;
+    line-height:18px;
+    padding:3px;
+
+}
+
+.controls ul li label{
+    display:inline;
+}
+
+.userImage{
+    border: 1px solid #9F9F9F;
+    display: inline;
+    margin: 0 10%;
+    width: 7%;
+}

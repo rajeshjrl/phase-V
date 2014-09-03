@@ -1,0 +1,549 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+main screen display here and search as listed
+******* These media screen as firstly important ******************* 
+1.mobile = 320x479
+2.mobile = 480x599
+2.mobile + andriod tab = 600x767
+3.i-pad portrait and some android = 768x1023
+4.i-pad landscape and laptop and large tablet = 1024x1280
+
+**Not much important this query as per requirment write it down**
+5.i-pad landscape and laptop and large tablet = 1280x1920
+
+*/
+
+/****************when this media query required then we will used this********************************
+1.i-pad landscape and laptop = 1024x1144	***--media query already below in comment after 768x1023****
+*/
+
+
+/*=BY=AMJ=================================================if-required-then-start-work-in-this-media-style============Start=======================================================*/
+
+/*@media only screen and (min-width:460px) and (max-width:598px)  {
+        
+
+}
+*/
+
+
+@media only screen and (min-width:320px) and (max-width:320px)  {
+
+
+}
+
+
+
+@media only screen and (min-width:480px) and (max-width:480px)  {
+
+
+}
+
+
+
+
+@media only screen and (min-width:640px) and (max-width:640px)  {
+
+
+}
+
+
+
+.
+@media only screen and (min-width:1024px) and (max-width:1024px) {
+
+
+
+}
+
+/*=BY=AMJ=================================================if-required-then-start-work-in-this-media-style============End=======================================================*/
+
+
+
+
+
+/*=BY=AMJ=================================================320x479========Start===========================================================*/
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+
+    .page_holder{
+        width:100%;
+    }
+    .flexslider{
+        width:100% !important;
+    }
+    .flex-direction-nav{
+        display:inline-block;
+        width:100%;
+        top:17px;
+        position:relative;
+    }
+    .flex-direction-nav a{
+        background-size:100% auto !important;
+        height:23px !important;
+    }
+    .flex-direction-nav .flex-prev{
+        background-position:14px 0 ;
+    }
+    .flex-direction-nav .flex-next{
+        background-position:-14px 0 !important ;
+    }
+    .flex-pauseplay{
+        position:relative;
+        top:-2px;
+    }
+    .flex-pause, .flex-play{
+        background-size:100% auto !important;
+        width:12px !important;
+    }
+    .flexslider .slides img{
+        height:100%;
+        width:100% !important;
+    }
+    .flexslider .slides > li{
+        height:200px !important;
+    }
+    .full_width_image{
+        height:100%;
+    }
+
+    .full_width_video{
+        width:100%;
+        display:inline-block;
+        height:100%;
+    }
+
+    .full_width_video iframe{
+        width:100%;
+        display:inline-block;
+        height:195px;
+    }
+
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+        height:200px !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100% !important;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+    .flex-direction-nav .flex-prev{
+        left:0 !important;
+    }
+    .flex-direction-nav .flex-next {
+        right: 0 !important;
+    }
+
+
+}
+
+
+/*=BY=AMJ=================================================480x479========Start===========================================================*/
+
+@media only screen and (min-width:480px) and (max-width:599px) {
+
+
+
+    .page_holder{
+        width:86%;
+    }
+    .flexslider{
+        width:100% !important;
+    }
+
+    .flexslider .slides > li {
+        height: 300px !important;
+    }
+    .full_width_image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .flexslider .slides .full_width_image img{
+        height:100%;
+    }
+
+    .full_width_video > iframe {
+        width: 100%;
+    }
+
+
+    .flexslider .slides > li .image_with_video img{
+        width:100% !important;
+    }
+
+
+    .full_width_video iframe{
+        width:100%;
+        display:inline-block;
+    }
+
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100% !important;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -38px !important;
+
+    }
+    .flex-direction-nav .flex-next{
+        right:-38px !important;
+    }
+
+
+
+
+}
+
+
+
+
+/*=BY=AMJ=================================================600x767=======Start============================================================*/
+
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+
+
+
+    .page_holder{
+        width:84%;
+    }
+    .flexslider{
+        width:100% !important;
+    }
+    .flexslider .slides > li{
+        height:297px !important;
+    }
+
+    .full_width_image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .flexslider .slides .full_width_image img{
+        height:100%;
+    }
+
+    .full_width_video > iframe {
+        width: 100%;
+    }
+
+
+    .flexslider .slides > li .image_with_video img{
+        width:60% !important;
+    }
+
+
+
+
+
+    .flexslider .slides > li {
+        height: 300px !important;
+    }
+    .full_width_image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .flexslider .slides .full_width_image img{
+        height:100%;
+    }
+
+
+    .flexslider .slides > li .image_with_video img{
+        width:100% !important;
+    }
+
+
+    .full_width_video iframe{
+        width:100%;
+        display:inline-block;
+    }
+
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100% !important;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -49px !important;
+
+    }
+    .flex-direction-nav .flex-next{
+        right:-49px !important;
+    }
+
+
+
+}
+
+
+
+/*=BY=AMJ=================================================768x1023=======Start============================================================*/
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+
+
+    #main{
+        margin:0 !important;
+    }
+
+    .page_holder{
+        width:88%;
+    }
+    .flexslider{
+        width:100% !important;
+    }
+    .flexslider .slides > li{
+        height:297px !important;
+    }
+
+    .full_width_image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .flexslider .slides .full_width_image img{
+        height:100%;
+    }
+
+    .full_width_video > iframe {
+        width: 100%;
+    }
+
+
+
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+        height:297px !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100% !important;
+    }
+    .image_with_video a img{
+        height:300px !important;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -49px !important;
+
+    }
+    .flex-direction-nav .flex-next{
+        right:-49px !important;
+    }
+
+
+
+
+
+}
+
+
+/*@media only screen and (min-width:1024px) and (max-width:1144px) {
+
+}
+*/
+
+
+/*=BY=AMJ=================================================1024x1280=======Start============================================================*/
+
+@media only screen and (min-width:1024px) and (max-width:1280px) {
+
+    #main{
+        margin:0 !important;
+    }
+
+    .page_holder{
+        width:90%;
+    }
+    .flexslider{
+        width:100% !important;
+    }
+    .flexslider .slides > li{
+        height:297px !important;
+    }
+
+    .full_width_image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .flexslider .slides .full_width_image img{
+        height:100%;
+    }
+
+    .full_width_video > iframe {
+        width: 100%;
+    }
+
+
+
+
+    .image_with_video iframe {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:50% !important;
+        height:297px !important;
+    }
+
+    .image_with_video a {
+        display: inline-block;
+        position: relative;
+        width: 100% !important;
+    }
+    .image_with_video a img{
+        height:300px !important;
+        width:100% !important;
+
+    }
+    .flex-direction-nav .flex-prev {
+        left: -49px !important;
+
+    }
+    .flex-direction-nav .flex-next{
+        right:-49px !important;
+    }
+
+
+
+
+}
+
+
+
+/*=BY=AMJ=================================================1280x1920=======Start============================================================*/
+
+@media only screen and (min-width:1280px) and (max-width:1920px) {
+    .image_with_video > a img{
+        width:56% !important;
+    }
+
+    /*@media screen and (-webkit-min-device-pixel-ratio:0) {
+        .image_with_video > a img{
+            width:56% !important;
+    }
+    }*/
+
+
+
+    .flexslider .slides > li{
+        height:300px;
+    }
+
+
+
+
+
+
+
+    /*BY-AMJ-**********if required then work below media query**********************************Start*********************************************************************************************************/
+
+    @media only screen and (min-width:800px) and (max-width:1280px) {
+
+
+
+
+    }
+
+    @media only screen and (min-width:320px) and (max-width:800px) {
+        /*----In this media query will write only regarding flex navigation classes----------------*/
+
+
+    }
+
+
+
+
+    @media only screen and (min-width:320px) and (max-width:1023px) {
+
+
+
+    }
+
+
+    @media only screen and (min-width:1025px) and (max-width:1280px) {
+
+
+
+    }
+
+
+
+    @media only screen and (min-width:800px) and (max-width:1023px) {
+
+
+
+
+    }
+
+    /*BY-AMJ-**********if required then work below media query**********************************End*********************************************************************************************************/
+
+

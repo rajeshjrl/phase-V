@@ -1,0 +1,101 @@
+|*|*********************************************************************************************************************|*|
+|*|*********************************************************************************************************************|*|
+|x|                                                                                                                     |x|
+|x|                                                                                                                     |x|
+|x|        _____         _____         ___        __        _____            ________   _________        _____          |x|
+|x|       //---\\       //---\\       ||-\\       ||       //---\\          //======/   ||_______|      //---\\         |x|
+|x|      ||     \\     //     \\      ||  \\      ||      //     \\        //           ||             //     \\        |x|
+|x|      ||_____||    //       \\     ||   \\     ||     //       \\      ||            ||______      //       \\       |x|
+|x|      ||____//    ||=========||    ||    \\    ||    ||=========||     ||            ||______|    ||=========||      |x|
+|x|      ||          ||=========||    ||     \\   ||    ||=========||     \\            ||           ||=========||      |x|
+|x|      ||          ||         ||    ||      \\  ||    ||         ||      \\_______    ||_______    ||         ||      |x|
+|x|      ||          ||         ||    ||       \\_||    ||         ||       \=======\   ||_______|   ||         ||      |x|
+|x|                                                                                                                     |x|
+|x|                                                                                                                     |x|
+|*|*********************************************************************************************************************|*|
+|*|*********************************************************************************************************************|*|
+
+   PIPL Code Library - Email Template Module at backend for CI(codeigniter).
+   Author - Anuj Tyagi
+   Purpose - The module will manage backend "Email Template Module" functionality for CI(codeigniter).
+
+   --------------------------------------
+   Ques:- What is "Email Templates" ?
+
+   Ans:- "Email Templates" are the template, we create specially to send an email, message in well formed through a website, 
+          This is widly used concept nowdays because as the time pass we get an idea to change the content we send through the website
+          So if we have provided the email  template to admin so he/she can modified them anytime he/she want.
+
+   ---------------------------
+   Overview of included pages
+   ---------------------------
+    
+   ---------------------------
+   1. Installation Notes
+   ---------------------------
+   In order to use Email Template  module CI , Below are steps.
+
+	Step 1 : Create the neccessary data struture required for the project, the db_sql found in the file db_sql -> db-sql-file-for-email-template.sql, Import this file in your database. Please note, the suffix  must match with your project's suffix if not matched, you may need to change the suffix.
+			
+			e.q. 1.create database p778
+			     2.Carefully Find and replace PIPL_  with  p778_ in the sql file
+			     3.Copy sql and fire query in datatbase created	
+	
+	Step 2 : Copy the routes email template routes from the file	pipl-code-library-ci -> application -> config -> routes.php and 
+
+		Paste those paths to your project route.
+
+	Step 3 : Copy following model from  pipl-code-library-ci -> application -> models folder to your project models folder eq to P778-> application -> models 	folder
+
+		
+		1.  common_model.php
+		2.  email_template_model.php
+
+        Stpe 4 : Step 3 : Copy following controller from  pipl-code-library-ci -> application -> controllers folder to your project controller folder e.q. to P78-> application -> controllers folder
+		
+		1.  email_template.php
+
+	Step 5 :Copy following folders and file from  pipl-code-library-ci -> application -> view -> backend folder to your project view backend folder e.q. to P778-> application -> view -> backend folder
+		
+		1.email-template
+
+		
+	Step 6 : Set your .htaccess rule correctly for the project directory
+
+
+	Step 7 : check your Config parameter into  for the ci application is correctley set i.e into the config.php and database.php file found into the pipl-code-library-ci -> application -> config folder.
+
+	
+	Step 8 : Hit the admin login url in browser window
+		
+		  e.g http://192.168.2.41/p778/backend/login 
+		
+			Enter user name : admin
+			Password : admin
+
+	Step 9 : Your email template module for project is ready.Check all Functionalities are working properly.
+
+
+	
+   ---------------------------
+   2. Admin Panel Controller Logic
+   ---------------------------
+
+   All the Models, controller and View are self explanatory having all comments associated with respective method on top of the method and inside method.
+   
+    Note :-  Please check the you have all required css and js files which are required in edit-email-template file.
+	
+ 
+
+
+|*|*********************************************************************************************************************|*|
+|x|                                                                                                                     |x|
+|x|                                          PIPL Email Template Module For CI - Readme.txt    for backend                                          |x|
+|x|                                                                                                                     |x|
+|*|*********************************************************************************************************************|*|
+
+
+
+
+
+

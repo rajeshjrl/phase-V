@@ -1,0 +1,1493 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+main screen display here and search as listed
+******* These media screen as firstly important ******************* 
+1.mobile = 320x479
+2.mobile = 480x599
+2.mobile + andriod tab = 600x767
+3.i-pad portrait and some android = 768x1023
+4.i-pad landscape and laptop and large tablet = 1024x1280
+**Not much important this query as per requirment write it down**
+5.i-pad landscape and laptop and large tablet = 1280x1920*/
+
+/*<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />*/
+
+/****************when this media query required then we will used this********************************
+1.i-pad landscape and laptop = 1024x1144	***--media query already below in comment after 768x1023*****/
+
+/*=BY=SANTOSH------------------------INDEX OF 320 TO 479 SCREEN RESULATION CSS------------*/
+/*
+1. COMMON CSS-------------------ALL COMMEN CSS
+2. HEADER / LOGIN MENU------------ ALL HEADER MENUS AND LOGIN MENUS CSS
+3. BANNER CSS---------------------BANNER CSS
+4. MIDDLE DATA CSS----------------MIDDLE CONTENT DATA CSS
+5. FOOTER DATA CSS----------------FOOTER CONTENT CSS
+6. LOGIN / SIGN UP PAGES --------- 
+*/
+/*=BY=SANTOSH------------------------INDEX OF 320 TO 479 SCREEN RESULATION CSS------------*/	
+
+/*=BY=SANTOSH=================================================320x479========Start===========================================================*/
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+
+
+    /*-------------------------COMMON CSS-----------------*/
+    .page_holder {
+        width:100%;
+    }
+    .page_inner {
+        padding:10px 10px 0 10px;
+        width:93.7%;
+    }
+    body {
+        padding-top:72px;
+        font-size:12px;
+    }
+    div {
+        font-size:12px;
+    }
+    header .page_inner {
+        position:relative;}
+    .logo {
+        width:100%;
+        text-align:center;
+        padding:0;
+    }
+    .nav_otr {
+        width:100%;
+    }
+    #content {
+        padding-top:0px;
+    }
+    .cms .page_head {
+        font-size:22px;
+    }
+    .bitcoins_head h1 {
+        font-size:18px;
+    }
+    /*-------------------------COMMON CSS-----------------*/
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    .fb_like {
+        width:auto;
+		display:none;
+    }
+    .menu-button {
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        width:25px;
+        height:25px;
+    }
+    .menu-button img {
+        width:100%;
+    }
+    .signup_link .menu ul {
+        display:block;
+    }
+    .menu {
+        position:relative;
+        width:15%;
+        margin:0;
+        float:left;	
+    }
+    .signup_link .menu {
+        margin-bottom:10px;
+        position:inherit;
+        width:100%;
+    }
+    .menu ul {
+        display:none;
+    }
+    .menu ul.mobile_menu {
+        position:absolute;
+        width:200px;
+        top:29px;
+        padding:10px;
+        background:#4065BE;
+        border-radius:0 0 5px 5px;
+        box-shadow:0 1px 2px 0px #212e50;
+        max-height:300px;
+        overflow-x:auto;
+    }
+    .menu ul.mobile_menu li {
+        width:100%;
+        text-align:left;
+        margin:0;
+        line-height:30px;
+        border-bottom:1px solid #3056b1;
+    }
+    .menu ul li.menudrops ul li a {
+        width:100%;
+        display:inline-block;
+        border-bottom:0 none;
+    }
+    .menu ul li.menudrops ul {
+        position:relative;
+        background:none;
+        display:none;
+        box-shadow:none;
+        width:100%;
+        padding:0;
+    }
+    .menu ul li.menudrops ul li.widedrops ul {
+        left:0;
+        display:none;
+    }
+    .menu ul li.menudrops:hover ul,
+    .menu ul li.menudrops ul li.widedrops:hover ul {
+        display:none;
+    }
+    .menu ul li span.arrow_wide, .menu ul li span.arrow, .menu ul li span.arrow_lang {
+        width:20px;
+        height:20px;
+        float:right;
+        background:#1c3777 url(../images/spritesheet.png) left -251px no-repeat;
+        margin:5px 5px 0 0;
+    }
+    .menu ul li span.arrow_wide:hover, .menu ul li span.arrow:hover, .menu ul li span.arrow_lang:hover {
+        background:#193d93 url(../images/spritesheet.png) left -251px no-repeat;}
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    /*---------------------BANNER CSS ----------------*/
+    #banner {
+        height:inherit;
+        background:#3760B5 url("../images/banner_bg.png") no-repeat scroll center top;
+    }
+    .banner_left {
+        width:100%;
+    }
+    .banner_text_img {
+        width:100%;
+        margin:inherit;
+    }
+    .banner_text h4 {
+        font-size:26px;
+    }
+    .banner_text_img img {
+        width:100%;
+    }
+    .banner_text {
+        padding:20px 0 20px 0;
+    }
+    .banner_right {
+        width:100%;
+    }
+    .banner_form_top, .banner_form_shadow{
+        display:none;
+    }
+    .banner_form_data {
+        width:100%;
+    }
+    .company_guide {
+        position:inherit;
+        top:inherit;
+        margin:20px 0 0 0;
+    }
+    .guide_sec {
+        width:100%;
+        margin:0 0 20px 0;
+    }
+    .guide_head {
+        width:100%;
+        background:url("../images/how_it_work_head_bg.png") top center no-repeat;
+    }
+    .guide_adv .adv_sec, .guide_adv {
+        width:100%;
+        margin:0 0 10px 0;
+    }
+    .adv_sec img {
+        width:100%;
+    }
+    #change_location {
+        padding:10px 0;
+    }
+    #change_location .page_inner {
+        padding:0;
+    }
+    .chng_loctn {
+        margin:0;
+    }
+    .chng_loctn fieldset label {
+        margin:0 5px 5px 0;
+        display:inline-block;
+        font-size:16px;
+    }
+    /*---------------------BANNER CSS ----------------*/
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    .bitcoins_head h1, .bitcoins_head a {
+        width:100%;
+    }
+    .current_bitcoin {
+        overflow-y:scroll;
+    }
+    .current_bitcoin table {
+        width:900px;
+    }
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    /*---------------------FOOTER DATA CSS ----------------*/
+    .footer_left, .footer_right {
+        width:100%;
+    }
+    .footer_right_in, .footer_left_in {
+        padding:0;
+        width:100%;
+    }
+    .latest_update {
+        margin:0;
+    }
+    .latest_update_head {
+        padding:10px 0;
+        font-size:18px;
+    }
+    .latest_update_data {
+        margin:10px 0 0 0;
+    }
+    .content_text {
+        width:60%;
+        line-height:20px;
+    }
+    .content_time {
+        width:38%;
+        line-height:20px;
+    }
+    .left_footer, .right_footer {
+        width:100%;
+        height:inherit;
+        left:0;
+    }
+    .find_links {
+        font-size:12px;
+    }
+    .company_footer {
+        margin:0;
+        padding:0 0 10px 0;
+    }
+    .copyright_sect {
+        width:100%;
+        text-align:center;
+    }
+    /*---------------------FOOTER DATA CSS ----------------*/
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    .login_form{
+        width:100%;
+    }
+    .formdata fieldset label {
+        font-size:14px;
+    }
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    .user_navi li a, .links_right a {
+        padding:0 6px;
+        font-size:12px;
+    }
+    .user_dash {
+        margin:0;
+    }
+    .bitcoin_form .banner_form_data {
+        padding:10px;
+        width:93.5%;
+    }
+    .selct_radio {
+        text-align:center;
+    }
+    .bitcoin_form fieldset {
+        width:100%;
+    }
+    .bitcoin_form .formdata fieldset input.amount {
+        width:47%;
+    }
+    .bitcoin_form .chng_loctn fieldset label {
+        width:auto;
+    }
+    .invite_friends .page_head {
+        padding:0 0 5px 0;
+    }
+    .dashboard .page_head h2 {
+        margin-bottom:10px;
+        font-size:22px;
+    }
+    .dashbord_nav {
+        text-align:center;
+    }
+    .send_bitcoin {
+        width:100%;
+    }
+    .send_bitcoin.right {
+        margin:0;
+    }
+    .invite_friend_in .page_head h5, .dashboard .wrapper .page_head h5 {
+        font-size:18px;
+    }
+    .user_advertisement table {
+        width:800px;
+    }
+    .user_advertisement {
+        overflow-x:scroll;
+    }
+    .edit_profile .info_fieldset .label, .edit_profile .info_fieldset .label_data, .info_fieldset.formarea {
+        width:98%;
+    }
+    .edit_profile .info_fieldset .label_data {
+        padding-bottom:2%;
+        font-size:11px;
+    }
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+    .post_trade .formdata fieldset label {
+        width:35%;
+    }
+    .post_trade .send_bitcoin_in .formdata fieldset input[type="text"], .post_trade .send_bitcoin_in .formdata fieldset select {
+        width:60%;
+    }
+    .post_trade .formdata .info_data {
+        width:98%;
+    }
+    .post_trade .tex_data {
+        width:60%;
+    }
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+	/*-----------------------USER DASHBORD-------------------------------*/
+	.user_dash .page_inner {
+		padding-top:0;
+		}
+	/*-----------------------USER DASHBORD-------------------------------*/
+	/*-----------------------FORUMS PAGES--------------------------------*/
+	.forums_header ul {
+		width:100%;
+		text-align:center;
+		}
+	.search_forums {
+		width:100%;
+		margin:0;
+		}
+	.forum_left_content, .forum_right_content {
+		width:100%;
+		margin-bottom:20px;
+		}
+	.user_info, .user_post_comment .user_comment_data {
+		width:76%;
+		}
+	.post_u_name, .post_time, .post_discussion, .post_social_links, .user_info span {
+		width:auto;
+		margin:0 6px;
+		}
+	.forum_title {
+		width:100%;
+		margin:10px 0;
+		padding:0;
+		line-height:25px;
+		}
+	.forum_right_content .data {
+		width:96%;
+		margin-left:4%;
+		}
+		.btn_post {
+		margin-left:0;
+		float:right;
+		}
+	/*-----------------------FORUMS PAGES--------------------------------*/
+}
+
+/*=BY=SANTOSH=================================================480x599========Start===========================================================*/
+
+@media only screen and (min-width:480px) and (max-width:599px) {
+
+    /*-------------------------COMMON CSS-----------------*/
+    .page_holder {
+        width:100%;
+    }
+    .page_inner {
+        padding:10px 10px 0 10px;
+        width:93.7%;
+    }
+    body {
+        padding-top:72px;
+        font-size:12px;
+    }
+    div {
+        font-size:12px;
+    }
+    header .page_inner {
+        position:relative;}
+    .logo {
+        width:100%;
+        text-align:center;
+        padding:0;
+    }
+    .nav_otr {
+        width:100%;
+    }
+    #content {
+        padding-top:0px;
+    }
+    .cms .page_head {
+        font-size:22px;
+    }
+    .bitcoins_head h1 {
+        font-size:18px;
+    }
+    /*-------------------------COMMON CSS-----------------*/
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    .fb_like {
+        width:auto;
+    }
+    .menu-button {
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        width:25px;
+        height:25px;
+    }
+    .menu-button img {
+        width:100%;
+    }
+    .signup_link .menu ul {
+        display:block;
+    }
+    .menu {
+        position:relative;
+        width:15%;
+        margin:0;
+        float:left;	
+    }
+    .signup_link .menu {
+        margin-bottom:10px;
+        position:inherit;
+        width:100%;
+    }
+    .menu ul {
+        display:none;
+    }
+    .menu ul.mobile_menu {
+        position:absolute;
+        width:200px;
+        top:29px;
+        padding:10px;
+        background:#4065BE;
+        border-radius:0 0 5px 5px;
+        box-shadow:0 1px 2px 0px #212e50;
+        max-height:300px;
+        overflow-x:auto;
+    }
+    .menu ul.mobile_menu li {
+        width:100%;
+        text-align:left;
+        margin:0;
+        line-height:30px;
+        border-bottom:1px solid #3056b1;
+    }
+    .menu ul li.menudrops ul li a {
+        width:100%;
+        display:inline-block;
+        border-bottom:0 none;
+    }
+    .menu ul li.menudrops ul {
+        position:relative;
+        background:none;
+        display:none;
+        box-shadow:none;
+        width:100%;
+        padding:0;
+    }
+    .menu ul li.menudrops ul li.widedrops ul {
+        left:0;
+        display:none;
+    }
+    .menu ul li.menudrops:hover ul,
+    .menu ul li.menudrops ul li.widedrops:hover ul {
+        display:none;
+    }
+    .menu ul li span.arrow_wide, .menu ul li span.arrow, .menu ul li span.arrow_lang {
+        width:20px;
+        height:20px;
+        float:right;
+        background:#1c3777 url(../images/spritesheet.png) left -251px no-repeat;
+        margin:5px 5px 0 0;
+    }
+    .menu ul li span.arrow_wide:hover, .menu ul li span.arrow:hover, .menu ul li span.arrow_lang:hover {
+        background:#193d93 url(../images/spritesheet.png) left -251px no-repeat;}
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    /*---------------------BANNER CSS ----------------*/
+    #banner {
+        height:inherit;
+        background:#3760B5 url("../images/banner_bg.png") no-repeat scroll center top;
+    }
+    .banner_left {
+        width:100%;
+    }
+    .banner_text_img {
+        width:100%;
+        margin:inherit;
+    }
+    .banner_text h4 {
+        font-size:26px;
+    }
+    .banner_text_img img {
+        width:100%;
+    }
+    .banner_text {
+        padding:20px 0 20px 0;
+    }
+    .banner_right {
+        width:100%;
+    }
+    .banner_form_top, .banner_form_shadow{
+        display:none;
+    }
+    .banner_form_data {
+        width:100%;
+    }
+    .company_guide {
+        position:inherit;
+        top:inherit;
+        margin:20px 0 0 0;
+    }
+    .guide_sec {
+        width:100%;
+        margin:0 0 20px 0;
+    }
+    .guide_head {
+        width:100%;
+        background:url("../images/how_it_work_head_bg.png") top center no-repeat;
+    }
+    .guide_adv .adv_sec, .guide_adv {
+        width:100%;
+        margin:0 0 10px 0;
+    }
+    .adv_sec img {
+        width:100%;
+    }
+    #change_location {
+        padding:10px 0;
+    }
+    #change_location .page_inner {
+        padding:0;
+    }
+    .chng_loctn {
+        margin:0;
+    }
+    .chng_loctn fieldset label {
+        margin:0 5px 5px 0;
+        display:inline-block;
+        font-size:16px;
+    }
+    /*---------------------BANNER CSS ----------------*/
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    .bitcoins_head h1, .bitcoins_head a {
+        width:100%;
+    }
+    .current_bitcoin {
+        overflow-y:scroll;
+    }
+    .current_bitcoin table {
+        width:900px;
+    }
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    /*---------------------FOOTER DATA CSS ----------------*/
+    .footer_left, .footer_right {
+        width:100%;
+    }
+    .footer_right_in, .footer_left_in {
+        padding:0;
+        width:100%;
+    }
+    .latest_update {
+        margin:0;
+    }
+    .latest_update_head {
+        padding:10px 0;
+        font-size:18px;
+    }
+	.latest_update_content {
+		text-align:center;
+		}
+    .latest_update_data {
+        margin:10px 0 0 0;
+    }
+    .content_text {
+        width:60%;
+        line-height:20px;
+    }
+    .content_time {
+        width:38%;
+        line-height:20px;
+    }
+    .left_footer, .right_footer {
+        width:100%;
+        height:inherit;
+        left:0;
+    }
+    .find_links {
+        font-size:12px;
+    }
+    .company_footer {
+        margin:0;
+        padding:0 0 10px 0;
+    }
+    .copyright_sect {
+        width:100%;
+        text-align:center;
+    }
+    .social_links {
+        width:100%;
+        text-align:center;
+    }
+    /*---------------------FOOTER DATA CSS ----------------*/
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    .login_form{
+        width:100%;
+    }
+    .formdata fieldset label {
+        font-size:14px;
+    }
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    .user_navi li a, .links_right a {
+        padding:0 6px;
+        font-size:12px;
+    }
+    .user_dash {
+        margin:0;
+    }
+    .bitcoin_form .banner_form_data {
+        padding:10px;
+        width:93.5%;
+    }
+    .selct_radio {
+        text-align:center;
+    }
+    .bitcoin_form fieldset {
+        width:100%;
+    }
+    .bitcoin_form .formdata fieldset input.amount {
+        width:47%;
+    }
+    .bitcoin_form .chng_loctn fieldset label {
+        width:auto;
+    }
+    .invite_friends .page_head {
+        padding:0 0 5px 0;
+    }
+    .dashboard .page_head h2 {
+        margin-bottom:10px;
+        font-size:22px;
+    }
+    .dashbord_nav {
+        text-align:center;
+    }
+    .send_bitcoin {
+        width:100%;
+    }
+    .send_bitcoin.right {
+        margin:0;
+    }
+    .invite_friend_in .page_head h5, .dashboard .wrapper .page_head h5 {
+        font-size:18px;
+    }
+    .user_advertisement table {
+        width:800px;
+    }
+    .user_advertisement {
+        overflow-x:scroll;
+    }
+    .edit_profile .info_fieldset .label, .edit_profile .info_fieldset .label_data, .info_fieldset.formarea {
+        width:98%;
+    }
+    .edit_profile .info_fieldset .label_data {
+        padding-bottom:2%;
+        font-size:11px;
+    }
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+    .post_trade .formdata fieldset label {
+        width:35%;
+    }
+    .post_trade .send_bitcoin_in .formdata fieldset input[type="text"], .post_trade .send_bitcoin_in .formdata fieldset select {
+        width:60%;
+    }
+    .post_trade .formdata .info_data {
+        width:98%;
+    }
+    .post_trade .tex_data {
+        width:60%;
+    }
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+/*-----------------------USER DASHBORD-------------------------------*/
+	.user_dash .page_inner {
+		padding-top:0;
+		}
+	/*-----------------------USER DASHBORD-------------------------------*/
+	/*-----------------------FORUMS PAGES--------------------------------*/
+	.forums_header ul {
+		width:100%;
+		text-align:center;
+		}
+	.search_forums {
+		width:100%;
+		margin:0;
+		}
+	.forum_left_content, .forum_right_content {
+		width:100%;
+		margin-bottom:20px;
+		}
+	.user_info, .user_post_comment .user_comment_data {
+		width:76%;
+		}
+	.post_u_name, .post_time, .post_discussion, .post_social_links, .user_info span {
+		width:auto;
+		margin:0 6px;
+		}
+	.forum_title {
+		width:100%;
+		margin:10px 0;
+		padding:0;
+		line-height:25px;
+		}
+	.forum_right_content .data {
+		width:44%;
+		float:left;
+		vertical-align:top;
+		margin-left:4%;
+		}
+		.btn_post {
+		margin-left:0;
+		float:right;
+		}
+	/*-----------------------FORUMS PAGES--------------------------------*/
+
+
+}
+
+/*=BY=SANTOSH=================================================600x767=======Start============================================================*/
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+
+    /*-------------------------COMMON CSS-----------------*/
+    .page_holder {
+        width:100%;
+    }
+    .page_inner {
+        padding:10px 10px 0 10px;
+        width:92.7%;
+    }
+    body {
+        padding-top:72px;
+        font-size:12px;
+    }
+    div {
+        font-size:12px;
+    }
+    header .page_inner {
+        position:relative;}
+    .logo {
+        width:100%;
+        text-align:center;
+        padding:0;
+    }
+    .nav_otr {
+        width:100%;
+    }
+    #content {
+        padding-top:0px;
+    }
+    .cms .page_head {
+        font-size:22px;
+    }
+    .bitcoins_head h1 {
+        font-size:18px;
+    }
+    /*-------------------------COMMON CSS-----------------*/
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    .fb_like {
+        width:auto;
+    }
+    .menu-button {
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        width:25px;
+        height:25px;
+    }
+    .menu-button img {
+        width:100%;
+    }
+    .signup_link .menu ul {
+        display:block;
+    }
+    .menu {
+        position:relative;
+        width:15%;
+        margin:0;
+        float:left;	
+    }
+    .signup_link .menu {
+        margin-bottom:10px;
+        position:inherit;
+        width:100%;
+    }
+    .menu ul {
+        display:none;
+    }
+    .menu ul.mobile_menu {
+        position:absolute;
+        width:200px;
+        top:29px;
+        padding:10px;
+        background:#4065BE;
+        border-radius:0 0 5px 5px;
+        box-shadow:0 1px 2px 0px #212e50;
+        max-height:300px;
+        overflow-x:auto;
+    }
+    .menu ul.mobile_menu li {
+        width:100%;
+        text-align:left;
+        margin:0;
+        line-height:30px;
+        border-bottom:1px solid #3056b1;
+    }
+    .menu ul li.menudrops ul li a {
+        width:100%;
+        display:inline-block;
+        border-bottom:0 none;
+    }
+    .menu ul li.menudrops ul {
+        position:relative;
+        background:none;
+        display:none;
+        box-shadow:none;
+        width:100%;
+        padding:0;
+    }
+    .menu ul li.menudrops ul li.widedrops ul {
+        left:0;
+        display:none;
+    }
+    .menu ul li.menudrops:hover ul,
+    .menu ul li.menudrops ul li.widedrops:hover ul {
+        display:none;
+    }
+    .menu ul li span.arrow_wide, .menu ul li span.arrow, .menu ul li span.arrow_lang {
+        width:20px;
+        height:20px;
+        float:right;
+        background:#1c3777 url(../images/spritesheet.png) left -251px no-repeat;
+        margin:5px 5px 0 0;
+    }
+    .menu ul li span.arrow_wide:hover, .menu ul li span.arrow:hover, .menu ul li span.arrow_lang:hover {
+        background:#193d93 url(../images/spritesheet.png) left -251px no-repeat;}
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    /*---------------------BANNER CSS ----------------*/
+    #banner {
+        height:450px;	
+    }
+    .banner_left {
+        width:52%;
+    }
+    .banner_text_img {
+        width:100%;
+        margin:inherit;
+    }
+    .banner_text h4 {
+        font-size:26px;
+    }
+    .banner_text_img img {
+        width:90%;
+    }
+    .banner_text {
+        padding:50px 0 50px 0;
+    }
+    .banner_right {
+        width:46%;
+    }
+    .banner_form_top, .banner_form_shadow{
+        background-size:100% 100%;
+        width:100%
+    }
+    .banner_form_data {
+        width:100%;
+    }
+    .guide_sec {	
+        margin:0 0 20px 0;
+    }
+    .guide_head {
+        width:100%;
+        background:url("../images/how_it_work_head_bg.png") top center no-repeat;
+    }
+    .guide_adv .adv_sec, .guide_adv {
+        width:97%;
+        margin:0 0 10px 0;
+    }
+    .adv_sec img {
+        width:100%;
+    }
+	#comInfo {
+		min-height:550px;
+		}
+    #change_location {
+        padding:10px 0;
+    }
+    #change_location .page_inner {
+        padding:0;
+    }
+    .chng_loctn {
+        margin:0;
+    }
+    .chng_loctn fieldset label {
+        margin:0 5px 5px 0;
+        display:inline-block;
+        font-size:16px;
+    }
+    /*---------------------BANNER CSS ----------------*/
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    .bitcoins_head h1, .bitcoins_head a {
+        width:100%;
+    }
+    .current_bitcoin {
+        overflow-y:scroll;
+    }
+    .current_bitcoin table {
+        width:900px;
+    }
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    /*---------------------FOOTER DATA CSS ----------------*/
+    .footer_left, .footer_right {
+        width:100%;
+    }
+    .footer_right_in, .footer_left_in {
+        padding:0;
+        width:100%;
+    }
+    .latest_update {
+        margin:0;
+    }
+    .latest_update_head {
+        padding:10px 0;
+        font-size:18px;
+    }
+    .latest_update_data {
+        margin:10px 0 0 0;
+    }
+    .content_text {
+        width:60%;
+        line-height:20px;
+    }
+	.latest_update_content {
+		text-align:center;
+		}
+    .content_time {
+        width:38%;
+        line-height:20px;
+    }
+    .left_footer, .right_footer {
+        width:100%;
+        height:inherit;
+        left:0;
+    }
+    .find_links {
+        font-size:12px;
+    }
+    .company_footer {
+        margin:0;
+        padding:0 0 10px 0;
+    }
+    .copyright_sect {
+        width:100%;
+        text-align:center;
+    }
+    .social_links {
+        width:100%;
+        text-align:center;
+    }
+    /*---------------------FOOTER DATA CSS ----------------*/
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    .formdata fieldset label {
+        font-size:14px;
+    }
+	.login_form {
+		width:65%;
+		}
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    .user_navi li a, .links_right a {
+        padding:0 6px;
+        font-size:12px;
+    }
+    .user_dash {
+        margin:0;
+    }
+    .bitcoin_form .banner_form_data {
+        padding:10px;
+        width:93.5%;
+    }
+    .selct_radio {
+        text-align:center;
+    }
+    .bitcoin_form fieldset {
+        width:100%;
+		text-align:center;
+    }
+    .bitcoin_form .formdata fieldset input.amount {
+        width:47%;
+    }
+    .bitcoin_form .chng_loctn fieldset label {
+        width:auto;
+    }
+    .invite_friends .page_head {
+        padding:0 0 5px 0;
+    }
+    .dashboard .page_head h2 {
+        margin-bottom:10px;
+        font-size:22px;
+    }
+    .dashbord_nav {
+        text-align:center;
+    }
+    .send_bitcoin {
+        width:100%;
+    }
+    .send_bitcoin.right {
+        margin:0;
+    }
+    .invite_friend_in .page_head h5, .dashboard .wrapper .page_head h5 {
+        font-size:18px;
+    }
+    .user_advertisement table {
+        width:800px;
+    }
+    .user_advertisement {
+        overflow-x:scroll;
+    }
+    .edit_profile .info_fieldset .label, .edit_profile .info_fieldset .label_data, .info_fieldset.formarea {
+        width:98%;
+    }
+    .edit_profile .info_fieldset .label_data {
+        padding-bottom:2%;
+        font-size:11px;
+    }
+	.dashbord_nav li a {
+		font-size:12px;
+		}
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+    .post_trade .formdata fieldset label {
+        width:35%;
+    }
+    .post_trade .send_bitcoin_in .formdata fieldset input[type="text"], .post_trade .send_bitcoin_in .formdata fieldset select {
+        width:60%;
+    }
+    .post_trade .formdata .info_data {
+        width:98%;
+    }
+    .post_trade .tex_data {
+        width:60%;
+    }
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+/*-----------------------USER DASHBORD-------------------------------*/
+	.user_dash .page_inner {
+		padding-top:0;
+		}
+	/*-----------------------USER DASHBORD-------------------------------*/
+	/*-----------------------FORUMS PAGES--------------------------------*/
+	.search_forums {
+		margin:0;
+		}
+	.forum_left_content, .forum_right_content {
+		width:100%;
+		margin-bottom:20px;
+		}
+	.user_info, .user_post_comment .user_comment_data {
+		width:76%;
+		}
+	.post_u_name, .post_time, .post_discussion, .post_social_links, .user_info span {
+		width:auto;
+		margin:0 6px;
+		}
+	.forum_title {
+		width:100%;
+		margin:10px 0;
+		padding:0;
+		line-height:25px;
+		}
+	.forum_right_content .data {
+		width:44%;
+		float:left;
+		vertical-align:top;
+		margin-left:4%;
+		}
+		.btn_post {
+		margin-left:0;
+		float:right;
+		}
+	/*-----------------------FORUMS PAGES--------------------------------*/
+}
+
+/*=BY=SANTOSH=================================================768x1024=======Start============================================================*/
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+	
+ /*-------------------------COMMON CSS-----------------*/
+    .page_holder {
+        width:100%;
+    }
+    .page_inner {
+        padding:10px 10px 0 10px;
+        width:94.7%;
+    }
+    body {
+        padding-top:72px;
+        font-size:12px;
+    }
+    div {
+        font-size:12px;
+    }
+    header .page_inner {
+        position:relative;}
+    .logo {
+        width:100%;
+        text-align:center;
+        padding:0;
+    }
+    .nav_otr {
+        width:100%;
+    }
+    #content {
+        padding-top:0px;
+    }
+    .cms .page_head {
+        font-size:22px;
+    }
+    .bitcoins_head h1 {
+        font-size:18px;
+    }
+    /*-------------------------COMMON CSS-----------------*/
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    .fb_like {
+        width:auto;
+    }
+    .menu-button {
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        width:25px;
+        height:25px;
+    }
+    .menu-button img {
+        width:100%;
+    }
+    .signup_link .menu ul {
+        display:block;
+    }
+    .menu {
+        position:relative;
+        width:15%;
+        margin:0;
+        float:left;	
+    }
+    .signup_link .menu {
+        margin-bottom:10px;
+        position:inherit;
+        width:100%;
+    }
+    .menu ul {
+        display:none;
+    }
+    .menu ul.mobile_menu {
+        position:absolute;
+        width:200px;
+        top:29px;
+        padding:10px;
+        background:#4065BE;
+        border-radius:0 0 5px 5px;
+        box-shadow:0 1px 2px 0px #212e50;
+        max-height:300px;
+        overflow-x:auto;
+    }
+    .menu ul.mobile_menu li {
+        width:100%;
+        text-align:left;
+        margin:0;
+        line-height:30px;
+        border-bottom:1px solid #3056b1;
+    }
+    .menu ul li.menudrops ul li a {
+        width:100%;
+        display:inline-block;
+        border-bottom:0 none;
+    }
+    .menu ul li.menudrops ul {
+        position:relative;
+        background:none;
+        display:none;
+        box-shadow:none;
+        width:100%;
+        padding:0;
+    }
+    .menu ul li.menudrops ul li.widedrops ul {
+        left:0;
+        display:none;
+    }
+    .menu ul li.menudrops:hover ul,
+    .menu ul li.menudrops ul li.widedrops:hover ul {
+        display:none;
+    }
+    .menu ul li span.arrow_wide, .menu ul li span.arrow, .menu ul li span.arrow_lang {
+        width:20px;
+        height:20px;
+        float:right;
+        background:#1c3777 url(../images/spritesheet.png) left -251px no-repeat;
+        margin:5px 5px 0 0;
+    }
+    .menu ul li span.arrow_wide:hover, .menu ul li span.arrow:hover, .menu ul li span.arrow_lang:hover {
+        background:#193d93 url(../images/spritesheet.png) left -251px no-repeat;}
+    /*---------------------HEADER / LOGIN MENU-----------------*/
+    /*---------------------BANNER CSS ----------------*/
+    #banner {
+        height:450px;	
+    }
+    .banner_left {
+        width:52%;
+    }
+    .banner_text_img {
+        width:100%;
+        margin:inherit;
+    }
+    .banner_text h4 {
+        font-size:26px;
+    }
+    .banner_text_img img {
+        width:90%;
+    }
+    .banner_text {
+        padding:50px 0 50px 0;
+    }
+    .banner_right {
+        width:46%;
+    }
+    .banner_form_top, .banner_form_shadow{
+        background-size:100% 100%;
+        width:100%
+    }
+    .banner_form_data {
+        width:100%;
+    }
+    .guide_sec {	
+        margin:0 0 20px 0;
+    }
+    .guide_head {
+        width:100%;
+        background:url("../images/how_it_work_head_bg.png") top center no-repeat;
+    }
+    .guide_adv .adv_sec, .guide_adv {
+        width:98%;
+        margin:0 0 10px 0;
+    }
+    .adv_sec img {
+        width:100%;
+    }
+	#comInfo {
+		min-height:580px;
+		}
+    #change_location {
+        padding:10px 0;
+    }
+    #change_location .page_inner {
+        padding:0;
+    }
+    .chng_loctn {
+        margin:0;
+    }
+    .chng_loctn fieldset label {
+        margin:0 5px 5px 0;
+        display:inline-block;
+        font-size:16px;
+    }
+    /*---------------------BANNER CSS ----------------*/
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    .bitcoins_head h1, .bitcoins_head a {
+        width:100%;
+    }
+    .current_bitcoin {
+        overflow-y:scroll;
+    }
+    .current_bitcoin table {
+        width:900px;
+    }
+    /*---------------------MIDDLE DATA CSS ----------------*/
+    /*---------------------FOOTER DATA CSS ----------------*/
+    .footer_left, .footer_right {
+        width:100%;
+    }
+    .footer_right_in, .footer_left_in {
+        padding:0;
+        width:100%;
+    }
+    .latest_update {
+        margin:0;
+    }
+    .latest_update_head {
+        padding:10px 0;
+        font-size:18px;
+    }
+    .latest_update_data {
+        margin:10px 0 0 0;
+    }
+    .content_text {
+        width:60%;
+        line-height:20px;
+    }
+    .content_time {
+        width:38%;
+        line-height:20px;
+    }
+    .left_footer, .right_footer {
+        width:100%;
+        height:inherit;
+        left:0;
+    }
+	.latest_update_content {
+		text-align:center;
+		}
+    .find_links {
+        font-size:12px;
+    }
+    .company_footer {
+        margin:0;
+        padding:0 0 10px 0;
+    }
+    .copyright_sect {
+        width:100%;
+        text-align:center;
+    }
+    .social_links {
+        width:100%;
+        text-align:center;
+    }
+    /*---------------------FOOTER DATA CSS ----------------*/
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    .formdata fieldset label {
+        font-size:14px;
+    }
+	.login_form {
+		width:65%;
+		}
+    /*---------------------LOGIN PAGE DATA CSS ----------------*/
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    .user_navi li a, .links_right a {
+        padding:0 6px;
+        font-size:12px;
+    }
+    .user_dash {
+        margin:0;
+    }
+    .bitcoin_form .banner_form_data {
+        padding:10px;
+        width:93.5%;
+    }
+    .selct_radio {
+        text-align:center;
+    }
+    .bitcoin_form fieldset {
+        width:100%;
+		text-align:center;
+    }
+    .bitcoin_form .formdata fieldset input.amount {
+        width:47%;
+    }
+    .bitcoin_form .chng_loctn fieldset label {
+        width:auto;
+    }
+    .invite_friends .page_head {
+        padding:0 0 5px 0;
+    }
+    .dashboard .page_head h2 {
+        margin-bottom:10px;
+        font-size:22px;
+    }
+    .dashbord_nav {
+        text-align:center;
+    }
+    .send_bitcoin {
+        width:100%;
+    }
+    .send_bitcoin.right {
+        margin:0;
+    }
+    .invite_friend_in .page_head h5, .dashboard .wrapper .page_head h5 {
+        font-size:18px;
+    }
+    .user_advertisement table {
+        width:800px;
+    }
+    .user_advertisement {
+        overflow-x:scroll;
+    }
+    .edit_profile .info_fieldset .label, .edit_profile .info_fieldset .label_data, .info_fieldset.formarea {
+        width:98%;
+    }
+    .edit_profile .info_fieldset .label_data {
+        padding-bottom:2%;
+        font-size:11px;
+    }
+	.dashbord_nav li a {
+		font-size:12px;
+		}
+    /*---------------------USER HOME PAGE DATA CSS ----------------*/
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+    .post_trade .formdata fieldset label {
+        width:35%;
+    }
+    .post_trade .send_bitcoin_in .formdata fieldset input[type="text"], .post_trade .send_bitcoin_in .formdata fieldset select {
+        width:60%;
+    }
+    .post_trade .formdata .info_data {
+        width:98%;
+    }
+    .post_trade .tex_data {
+        width:60%;
+    }
+    /*---------------------USER POST TRADE PAGE DATA CSS ----------------*/
+/*-----------------------USER DASHBORD-------------------------------*/
+	.user_dash .page_inner {
+		padding-top:0;
+		}
+	/*-----------------------USER DASHBORD-------------------------------*/
+	/*-----------------------FORUMS PAGES--------------------------------*/
+	.user_info, .user_post_comment .user_comment_data {
+		width:87%;
+		}
+	.post_u_name, .post_time, .post_discussion, .post_social_links, .user_info span {
+		width:auto;
+		margin:0 6px;
+		}
+	.forum_title {
+		width:88%;
+		line-height:25px;
+		}	
+		.btn_post {
+		margin-left:0;
+		float:right;
+		}
+	/*-----------------------FORUMS PAGES--------------------------------*/
+
+
+}
+
+/*BY-SANTOSH-**********if required then work below media query**********************************Start*****************************/
+
+@media only screen and (min-width:320px) and (max-width:800px) {
+    /*----In this media query will write only regarding flex navigation classes----------*/
+
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1023px) {
+
+}
+
+/*BY-SANTOSH-**********if required then work below media query**********************************End*******************************/

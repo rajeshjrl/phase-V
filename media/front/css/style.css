@@ -1,0 +1,2328 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------------This is reset library we have to insert at the top of css --------------------*/
+
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0; font-weight:normal;}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0; outline:none;}address,caption,cite,code,dfn,em,th,var{font-weight:normal}li{list-style:none}caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;/*font-weight:normal*/}
+q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+body{*font-size:small;*font:x-small}select,input,button,textarea{font:99% }table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:oxygenregular;*font-size:108%;line-height:100%}
+a{ text-decoration:none; }
+:active{ outline:0 none;}
+:focus{ outline:0 none;}
+:hover{ outline:0 none;}
+div{ font-size:12px; font-weight:normal;}
+
+input[type="text"], input[type="password"] {
+    width:100%;
+    border:1px solid #cccccc;
+    height:40px;
+    height:25px\0;
+    border-radius:5px;
+    padding:5px 0 5px 10px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow:0 0 3px #6188da;
+}
+
+/*-------------------------------style starts here--------------------------------------------*/
+/*---------------------browser text section color code----------------*/
+
+::-moz-selection {
+    background: #d7e5e6 ; /* Firefox */
+}
+::-o-selection {
+    background: #d7e5e6 ; /* opera */
+}
+::-webkit-selection {
+    background: #d7e5e6 ; /* crome */
+}
+
+::selection {
+    background: #d7e5e6 ; /* Safari */
+}
+/*---------------------browser text section color code----------------*/
+
+/*---------------------font-faces code----------------*/
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('abeezee-regular.eot');
+    src: url('font/abeezee/abeezee-regular.eot?#iefix') format('embedded-opentype'),
+        url('font/abeezee/abeezee-regular.woff') format('woff'),
+        url('font/abeezee/abeezee-regular.ttf') format('truetype'),
+        url('font/abeezee/abeezee-regular.svg#abeezeeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*---------------------font-faces code----------------*/
+body{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#343331;
+    background:#fafaf5;
+    padding:66px 0 0 0;
+}
+a {
+    color:##3366CC;
+}
+a:hover {
+    color:#707070;
+}
+/*------Header css starts here------------*/
+.page_holder{
+    width:990px;
+    margin:0 auto;	
+}
+.page_inner{
+    width:100%;
+    display:inline-block;
+}
+header{
+    width:100%;
+    display:inline-block;
+    background:url(../images/header_blue_bg.png) left bottom repeat-x #4065be;
+    min-height:54px;
+    border-bottom:1px solid #04102d;
+    text-align:left;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:999;
+}
+.logo{
+    width:17%;
+    display:inline-block;
+    vertical-align:top;
+    padding:12px 0 0 0;
+}
+.logo a{
+    font-size:25px;
+    color:#fff;
+}
+.nav_otr {
+    padding: 8px 0 0;
+    float:right;
+    width:70%;
+}
+.login{
+    border-left:1px solid #A6A6A6;
+    padding:0 0 5px 20px;
+}
+.menu {
+    margin: 10px 0 5px 0;
+    text-align:right;
+    float:right;
+}
+.signup_link .menu {
+    margin:0;
+    line-height:22px;
+}
+.menu ul{
+    width:auto;
+    display:inline-block;
+}
+.menu ul li{
+    float:left;
+    margin:0 0 0 20px;
+    position:relative;
+}
+.menu ul li a{
+    font-size:14px;
+    color:#c6c6c6;
+    transition:all ease 0.8s 0s;
+    font-family: 'abeezeeregular';
+    text-shadow:0 1px 1px #000000;
+}
+.menu ul li span.arrow, .menu ul li span.arrow_lang, .menu ul li span.arrow_profile{
+    width:20px;
+    height:20px;
+    background:#1c3777 url(../images/spritesheet.png) left -251px no-repeat;
+    display:inline-block;
+    margin:0 0 0 5px;
+    vertical-align:top;
+}
+.menu ul li span.arrow:hover, .menu ul li span.arrow_lang:hover, .menu ul li span.arrow_profile:hover {
+    background:#193d93 url(../images/spritesheet.png) left -251px no-repeat;
+}
+.menu ul li a:hover{
+    color:#6891f1 !important;
+}
+.menu ul li a:active{
+    color:#6891f1 !important;
+}
+.menu_active{
+    color:#6891f1 !important;
+}
+.signup_link {
+    float:right;
+}
+.menu-button {
+    color: #222222;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 5px 10px;
+    position: relative;
+    width: 40px;
+}
+
+.fb_like {
+    width:70px;
+    height:18px;
+    display:inline-block;
+    vertical-align:top;
+    /*background:url(../images/spritesheet.png) left -208px no-repeat;*/
+}
+.gl_like {
+    width:27px;
+    height:17px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) left -226px no-repeat;
+}
+/*------Header css ends here------------*/
+/*------added css for drops menu -----*/
+.menu ul li.menudrops ul {
+    display:none;
+    position:absolute;
+    right:0;
+    text-align:left;
+    background:#2A4EA3;
+    box-shadow:0 1px 3px 0 #283a67;
+    border-radius:0 0 5px 5px;
+    z-index:999;
+    width:150px;
+    padding:0 10px 10px 10px;
+}
+
+.menu ul li.menudrops ul li {
+    display:inline-block;
+    width:100%;
+    margin:0;
+    line-height:25px;
+}
+.menu ul li.menudrops ul li a {
+    display:inline-block;
+    vertical-align:top;
+    padding:2px 0;
+    border-bottom:1px solid #284893;
+    width:100%;
+}
+.menu ul li span.arrow_wide {
+    width:20px;
+    height:20px;
+    background:#1c3777 url(../images/spritesheet.png) -20px -251px no-repeat;
+    display:inline-block;
+    margin:8px 5px 0 0;
+    float:right;
+    vertical-align:top;
+}
+.menu ul li span.arrow_wide:hover {
+    background:#193d93 url(../images/spritesheet.png) -20px -251px no-repeat;
+}
+.menu ul li.menudrops ul li.widedrops ul {
+    display:none;
+    left:150px;
+    top:0;
+}
+/*------added css for drops menu -----*/
+/*-------------BANNER CSS -------------05-01-14---*/
+#banner {
+    width:100%;
+    height:490px;
+    background:url(../images/banner_bg.png) top center no-repeat #ffffff;
+}
+#banner .page_inner {
+    text-align:left;
+}
+.banner_left {
+    width:58%;
+    display:inline-block;
+    vertical-align:top;
+}
+.banner_text_img {
+    width:98%;
+    display:inline-block;
+    vertical-align:top;
+    margin:40px 0 0 10px;
+}
+.banner_text {
+    width:98%;
+    display:inline-block;
+    vertical-align:top;
+    padding:50px 0 50 10px;
+}
+.banner_text h4 {
+    font-size:30px;
+    color:#01050e;
+    font-family: 'abeezeeregular';
+}
+.banner_text h5 {
+    font-size:18px;
+    color:#3e63b5;
+    font-family: 'abeezeeregular';
+    margin-top:5px;
+}
+.banner_signup {
+    width:273px;
+    height:55px;
+    background:url(../images/spritesheet.png) left -5px no-repeat;
+    display:inline-block;	
+}
+.banner_signup:hover {
+    background:url(../images/spritesheet.png) left -60px no-repeat;
+}
+.banner_signup a {
+    font-size:24px;
+    color:#fff;
+    display:inline-block;
+    vertical-align:top;
+    margin:12px 0 0 85px;
+}
+.banner_signup:hover a {
+    color:#738cde;
+}
+.banner_right {
+    width:40.5%;
+    display:inline-block;
+    vertical-align:top;
+}
+.banner_form {
+    width:100%;
+    display:inline-block;
+    margin:30px 0 0 0;
+}
+.banner_form_top {
+    background:url(../images/form_top.png) left top no-repeat;
+    width:400px;
+    height:7px;
+    display:inline-block;
+    display:block\0/;
+    vertical-align:top;
+}
+.banner_form_data {
+    width:398px;
+    height:auto;
+    border: 1px solid #cdcdcd;
+    background:#f8f8f8;
+    border-radius:3px;
+    display:inline-block;
+    display:block\0/;
+    vertical-align:top;
+}
+.banner_form_shadow {
+    width:400px;
+    background:url(../images/form_shadow.png) left top no-repeat;
+    height:6px;
+    display:inline-block;
+    display:block\0/;
+}
+.banner_form .formdata {
+    width:92%;
+    padding:4%;
+    display:inline-block;
+    display:block\0/;
+}
+.formdata fieldset {
+    margin-bottom:10px;
+}
+.formdata fieldset label {
+    font-size:16px;
+    color:#3a5ba9;
+    width:100%;
+    display:inline-block;
+    margin:0 0 5px 0;
+}
+.formdata fieldset input[type='text'], .formdata fieldset input[type='password'], .formdata fieldset select{
+    width:100%;
+    width:96%\0;
+    background:#f0f0f0;
+    border:1px solid #c6c6c6;
+    padding:7px 5px;
+    border-radius:3px;
+    height:32px;
+    height:25px\0;
+    padding:5px\0;
+}
+.formdata fieldset select {
+    height:36px\0;
+}
+.formdata fieldset input.amount {
+    width:70%;
+    width:67%\0;
+}
+.formdata fieldset select.curncy {
+    width:28%;
+}
+.formdata fieldset.button {
+    text-align:center;
+    margin:10px 0 0 0;
+    display:inline-block;
+    vertical-align:top;
+    width:100%;
+}
+fieldset.button input[type='submit'], fieldset.button input[type='button'] {
+    border:2px solid #d5d5d5;
+    background:#000;
+    padding:6px 10px;
+    color:#fff;
+    font-size:20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:all 300ms linear ;
+    line-height:27px\0;
+}
+fieldset.button input[type='submit']:hover {
+    background:#183e98;
+    text-shadow:0 1px 1px #006;
+}
+/*-------------BANNER CSS -------------05-01-14---*/
+/*-------------INFO SECTION CSS -------------05-01-14---*/
+#comInfo {
+    width:100%;
+    min-height:380px;
+    background:#3760b5;
+}
+#comInfo .page_holder, #comInfo .page_inner {
+    position:relative;
+}
+.company_guide {
+    position:absolute;
+    width:100%;
+    top:-47px;
+    /*top:-49px\0/;*/
+}
+.guide_sec {
+    width:31.5%;
+    margin-right:2%;
+    display:inline-block;
+    vertical-align:top;
+}
+.last {
+    margin-right:0 !important;
+}
+.guide_head {
+    width:310px;
+    height:93px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) left -115px no-repeat;
+}
+.guide_head span {
+    font-size:25px;
+    color:#000;
+    font-family: 'abeezeeregular';
+    margin:30px 0 0 0;
+    display:inline-block;
+}
+.guide_data {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.guide_data h4 {
+    font-size:22px;
+    color:#96b5fa;
+    font-family: 'abeezeeregular';
+    margin:5px 0;
+}
+.guide_data p {
+    color:#000;
+    line-height:20px;
+    font-size:13px;
+}
+.guide_adv {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:50px;
+}
+.guide_adv .adv_sec {
+    display:inline-block;
+    vertical-align:top;
+    width:49%;
+    margin:0 10px 0 0;
+}
+/*-------------INFO SECTION CSS -------------05-01-14---*/
+/*-------------CHANGE LOCATION SECTION CSS -------------05-01-14---*/
+#change_location {
+    width:100%;
+    display:inline-block;
+    background:url(../images/change_loc_bg.png) left top repeat;
+    padding:15px 0;
+}
+.chng_loctn {
+    margin:5px 0;	
+}
+.chng_loctn fieldset label {
+    color:#666;
+    font-size:25px;
+    margin:0 5px 0 0;
+    font-family: 'abeezeeregular';
+}
+.chng_loctn fieldset input[type="text"] {
+    width:50%;
+    height:25px\0;
+}
+/*-------------CHANGE LOCATION SECTION CSS -------------05-01-14---*/
+/*-------------MIDDLE SECTION CSS -------------05-01-14---*/
+#content {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    min-height:420px;
+    padding:30px 0 10px 0;
+}
+.bitcoins {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    border-bottom:1px dashed #a1a1a1;
+    margin-bottom:20px;
+}
+.bitcoins_head {
+    text-align:left;
+    padding:0 0 10px 0;
+    display:inline-block;
+    width:100%;
+}
+.bitcoins_head h1 {
+    color:#406cd0;
+    font-size:25px;
+    width:60%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+    font-family: 'abeezeeregular';
+}
+.bitcoins_head a {
+    width:39%;
+    display:inline-block;
+    text-align:right;
+    font-size:14px;
+    line-height:30px;
+    color:#3455a4;
+}
+.bitcoins_head a:hover {
+    text-decoration:underline;
+}
+.bitbuyer span {
+    width:10px;
+    height:7px;
+    background:url(../images/spritesheet.png) -273px top no-repeat;
+    display:inline-block;
+    margin:13px 0 0 3px;
+    vertical-align:top;
+}
+.locatebuyer span {
+    width:8px;
+    height:14px;
+    background:url(../images/spritesheet.png) -309px top no-repeat;
+    display:inline-block;
+    margin:9px 0 0 3px;
+    vertical-align:top;
+}
+.current_bitcoin {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.current_bitcoin table {
+    width:100%;
+    margin:0 0 20px 0;
+}
+.current_bitcoin table tr.head {
+    background:#393939;
+    border-radius:5px 5px 0 0;
+    height:35px;
+    /*display:block;*/
+}
+.current_bitcoin table tr.head th {
+    padding:0 0 0 1%;
+    color:#fff;
+    line-height:35px;
+    font-family: 'abeezeeregular';
+    font-size:16px;
+    /*display:inline-block;*/
+    vertical-align:top;
+}
+th.seller_name, th.describe, th.pay_methods,td.seller_name, td.describe, td.pay_methods {
+    width:18%;
+} 
+th.price_btc, th.limits, td.price_btc, td.limits {
+    width:14%;
+}
+th.button_buy, td.button_buy {
+    width:9%;
+}
+td.button_buy {
+    background:url(../images/tr_buy_divider.png) left center no-repeat;
+}
+.current_bitcoin table tr td {
+    padding:0 0 0 10px !important;
+    color:#0d0d0d;
+    line-height:35px;
+    font-size:14px;
+    /*display:inline-block;*/
+    vertical-align:top;
+}
+table tr.white_row {
+    margin:10px 0;
+    /*display:block;*/
+}
+table tr.white_row td {
+    padding:10px 0 10px 10px !important;
+}
+table tr.greay_row {
+    background:#e8ecf1;
+}
+.actbuy span {
+    width:13px;
+    height:11px;
+    /*background:url(../images/spritesheet.png) -296px top no-repeat;*/
+    display:inline-block;
+    margin:13px 8px 0 3px;
+    vertical-align:top;
+}
+.actsell span {
+    width:13px;
+    height:12px;
+    /*background:url(../images/spritesheet.png) -283px top no-repeat;*/
+    display:inline-block;
+    margin:13px 8px 0 3px;
+
+}
+.actbuy, .actsell {
+    width:100%;
+    display:inline-block;
+    text-align:center;
+    font-size:14px;
+    line-height:35px;
+    color:#3455a4;
+    vertical-align:middle;
+}
+.actbuy:hover, .actsell:hover {
+    text-decoration:underline;
+}
+/*-------------MIDDLE SECTION CSS -------------05-01-14---*/
+/*-------------FOOTER SECTION CSS -------------05-01-14---*/
+#footer {
+    background:url(../images/footer_top_line.png) left top repeat-x #f4f4f4;
+    width:100%;
+    display:inline-block;
+}
+.footer_top {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.footer_left {
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:right;
+}
+.footer_right {
+    width:48.7%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+    min-height:200px;
+    background:url(../images/footer_top_line.png) left top repeat-x #efefef;
+}
+.footer_left_in {
+    width:490px;
+    float:right;
+    text-align:left;
+}
+.footer_right_in {
+    width:460px;
+    float:left;
+    text-align:left;
+    padding:0 0 0 30px;
+
+}
+.latest_update {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin:20px 0 0 0;
+}
+.latest_update_head {
+    padding:15px 0;
+    width:100%;
+    display:inline-block;
+    text-align:center;
+    background:url(../images/footer_head_bg.png) bottom center no-repeat;
+    font-family: 'abeezeeregular';
+    font-size:22px;
+    color:#3366cc;
+}
+.latest_update_head .rss {
+    width:25px;
+    height:25px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -317px top no-repeat;
+    margin:2px 0 0 10px;
+}
+.latest_update_data {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin:20px 0 20px 0;
+}
+.latest_update_content {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;	
+    font-family: 'abeezeeregular';
+    color:#666666;
+    margin:0 0 10px 0;
+}
+.content_text {
+    width:70%;
+    display:inline-block;
+    vertical-align:top;
+    line-height:30px;
+}
+.content_time {
+    width:29%;
+    display:inline-block;
+    vertical-align:top;
+    line-height:30px;
+}
+.left_footer {
+    width:50%;
+    text-align:right;
+    background:#2a4ea3;
+    height:50px;
+    display:inline-block;
+    vertical-align:top;
+}
+.right_footer {
+    width:48.7%;
+    text-align:left;
+    background:#1d356f;
+    height:50px;
+    position:relative;
+    left:-4px;
+    display:inline-block;
+    vertical-align:top;
+}
+.find_links {
+    color:#fff;
+    font-size:20px;
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    padding:10px 0;
+}
+.find_links:hover {
+    color:#9fb8f4;
+}
+.find_links span {
+    text-decoration:underline;
+    color:#5177d4;
+}
+.find_links:hover span {
+    color:#9fb8f4;
+}
+.company_footer {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+    padding:10px 0;
+    margin:20px 0 0 0;
+}
+.logo_link {
+    display:inline-block;
+    width:auto;
+    margin:0 10px 0 0;
+    vertical-align:top;
+}
+.logo_link a {
+    color:#2a4ea3;
+    font-size:22px;
+    font-family: 'abeezeeregular';
+}
+.logo_link a:hover {
+    text-decoration:underline;
+}
+.logo_link a span {
+    width:10px;
+    height:30px;
+    background:#2a4ea3;
+    display:inline-block;
+    vertical-align:top;
+    margin:0 10px 0 0;
+}
+.footer_nav {
+    display: inline-block;
+    width:auto;
+    vertical-align:top;
+}
+.footer_nav ul {
+    list-style-type:none;
+}
+.footer_nav ul li {
+    width:auto;
+    display:inline-block;
+    vertical-align:top;
+    padding:0 10px;
+}
+.footer_nav ul span {
+    display:inline-block;
+    font-size:11px;
+    line-height:30px;
+}
+.footer_nav ul li a {
+    font-size:13px;
+    color:#323131;
+    line-height:30px;
+    display:inline-block;
+}
+.footer_nav ul li a:hover {
+    color:#000;
+    text-decoration:underline;
+}
+.social_media {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    padding:10px 0;
+}
+.social_links {
+    width:auto;
+    display:inline-block;
+    vertical-align:top;
+}
+.social_links ul {
+    list-style-type:none;
+}
+.social_links ul li {
+    display:inline-block;
+    vertical-align:top;
+    width:auto;
+    padding:0 10px 0 0;
+}
+.social_links ul li a {
+    display:inline-block;
+    vertical-align:top;
+    line-height:30px;
+    color:2a4ea3;
+    font-size:13px;
+}
+.social_links ul li a:hover {
+    text-decoration:underline;
+}
+.chat span{
+    width:15px;
+    height:14px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -342px top no-repeat;
+    margin:10px 5px 0 0;
+}
+.facebook span{
+    width:7px;
+    height:15px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -357px top no-repeat;
+    margin:8px 5px 0 0;
+}
+.twitter span{
+    width:14px;
+    height:11px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -364px top no-repeat;
+    margin:10px 5px 0 0;
+}
+.google_plus span{
+    width:15px;
+    height:14px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -378px top no-repeat;
+    margin:10px 5px 0 0;
+}
+.blog span{
+    width:12px;
+    height:12px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -393px top no-repeat;
+    margin:10px 5px 0 0;
+}
+.reddit span{
+    width:15px;
+    height:14px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -405px top no-repeat;
+    margin:10px 5px 0 0;
+}
+.copyright_sect {
+    color: #9B9B9B;
+    display: inline-block;
+    width: auto;
+    float:right;
+    line-height:18px;
+    text-align:right;
+}
+.copyright_sect a {
+    color: #1d356f;
+    display: inline;
+    text-decoration: underline;
+    font-size:13px;
+}
+.copyright_sect a:hover {
+    color:#9b9b9b;
+}
+.social_links .copyright_sect {
+    float:left;
+}
+/*-------------FOOTER SECTION CSS -------------05-01-14---*/
+/*-------------LOGIN PAG CSS -------------06-01-14---*/
+.login_form {
+    width:41%;
+    margin:0 auto;
+}
+.login_form .banner_right {
+    width:100%;
+    text-align:left;
+}
+.login_form .banner_form {
+    margin:0;
+}
+.login_form .page_head {
+    padding:0 0 10px 0;
+    width:100%;
+    display:inline-block;
+    text-align:center;
+    background:url(../images/footer_head_bg.png) bottom center no-repeat;
+    font-family: 'abeezeeregular';
+    font-size:30px;
+    color:#3366cc;
+    margin:0 0 20px 0;
+}
+.login_form .formdata fieldset input[type="text"], .login_form .formdata fieldset input[type="password"], .login_form .formdata fieldset select {
+    height:40px;
+    height:25px\0;
+    background:#fff;
+}
+.ie10 .login_form .formdata fieldset input[type="text"], .ie10  .login_form .formdata fieldset input[type="password"], .ie10  .login_form .formdata fieldset select {
+    height:40px;	
+}
+.login_form .formdata fieldset a {
+    color:#1d356f;
+}
+.login_form .formdata fieldset a:hover {
+    color:#9b9b9b;
+}
+.formdata fieldset input[type="checkbox"]{
+    margin:0 10px 0 0;
+}
+/*-------------LOGIN PAG CSS -------------06-01-14---*/
+/*-------------CMS PAGES CSS -------------06-01-14---*/
+.cms .page_head {
+    padding:0 0 5px 5px;;
+    width:100%;
+    display:inline-block;
+    text-align:left;
+    font-family: 'abeezeeregular';
+    border-bottom:1px solid #666;
+    font-size:30px;
+    color:#3366cc;
+    margin:0 0 10px 0;
+}
+.cms .wrapper {
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    width: 98%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+}
+.cms .wrapper h1, .cms .wrapper h2, .cms .wrapper h3, .cms .wrapper h4 {
+    font-size:24px;
+    color:#707070;
+    margin:0 0 10px 0;
+}
+.cms .wrapper p {
+    line-height:20px;
+    color:#323232;
+    font-size:13px;
+    margin-bottom:10px;
+}
+/*-------------CMS PAGES CSS -------------06-01-14---*/
+/*-------------DASHBOARD PAGES CSS --------07-02-14---*/
+.dashboard {}
+.dashboard .page_head {
+    margin:0;
+}
+.dashboard .page_head h2 {
+    width:auto;
+    display:inline-block;
+}
+.dashbord_nav {
+    width:auto;
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+}
+.dashbord_nav li {
+    display:inline-block;
+    vertical-align:top;
+    margin:0 10px 0 0;
+    line-height:35px;
+    border-radius:5px;
+}
+.dashbord_nav li.active {
+    background:#3760b5;
+}
+.dashbord_nav li a {
+    padding:0 10px;
+    display:inline-block;
+    vertical-align:top;
+    font-size:16px;
+    color:#707070;
+}
+.dashbord_nav li a:hover {
+    color:#3760b5;
+}
+.dashbord_nav li.active a {
+    color:#fff;
+}
+#content.dashboard {
+    padding:0 0 10px 0;
+}
+.user_dash .page_inner {
+    display:block;
+}
+.user_dash {
+    width:100%;
+    display:inline-block;
+    min-height:50px;
+    margin:0 0 20px 0;
+    box-shadow: 0 1px 2px 0 #bbb;
+    background:#efefef;
+    text-align:left;
+}
+.user_navi {
+    width:auto;
+    display:inline-block;
+    vertical-align:top;
+}
+.user_navi li {
+    display:inline-block;
+    vertical-align:top;
+    line-height:50px;	
+}
+.user_navi li a, .links_right a {
+    padding:0 10px;
+    display:inline-block;
+    vertical-align:top;
+    font-size:14px;
+    color:#000;
+    font-weight:bold;
+}
+.user_navi li a:hover, .links_right a:hover {
+    color:#3760b5;
+}
+.user_navi li.active {
+    background:#a0a7af;
+    height:50px;
+}
+.user_navi li span.arrow {
+    display:none;
+}
+.user_navi li.active span.arrow {
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:8px;
+    background:url(../images/active_down_arrow.png) center top no-repeat;
+}
+.user_navi li.active a {
+    color:#fff;
+}
+.links_right {
+    width:auto;
+    float:right;
+    line-height:50px;	
+}
+.bitcoin_form {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin:0 0 10px 0;
+}
+.bitcoin_form .banner_form_data {
+    width:96%;
+    display:inline-block;
+    padding:15px;
+    margin:0 0 15px 0;
+}
+.bitcoin_form fieldset {
+    width:49.7%;
+    display:inline-block;
+    text-align:left;
+    vertical-align:top;
+}
+.bitcoin_form .formdata {
+    width:100%;
+    display:inline-blcok;
+}
+.bitcoin_form .formdata form {
+    display:inline-block;
+    width:100%;
+    text-align:left;
+}
+.bitcoin_form fieldset label {
+    width:27%;
+} 
+.bitcoin_form .formdata fieldset input[type="text"], .bitcoin_form .formdata fieldset select {
+    width:68%;
+    vertical-align:top;	
+}
+.bitcoin_form .formdata fieldset input.amount {
+    width:50%;
+    width:48%\0;
+}
+.bitcoin_form .formdata fieldset select.curncy {
+    width:20%;
+    vertical-align:top;
+}
+.bitcoin_form .formdata fieldset.button {
+    width:auto;
+    margin:0;
+}
+.bitcoin_form .formdata fieldset.button input {
+    padding:3px 10px;
+    font-size:16px;
+}
+.selct_radio {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    padding:0 5px 5px 5px;
+    margin-bottom:10px;
+    border-bottom:1px solid #e6e6e6;
+}
+.selct_radio span {
+    font-weight:bold;
+}
+.user_advertisement {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.user_advertisement table {
+    width:100%;
+    margin-bottom:10px;
+}
+.dashboard .wrapper .page_head h5 {
+    font-size:22px;
+}
+.dashboard .wrapper .page_head {
+    border-bottom:1px solid #e6e6e6;
+    margin-bottom:10px;
+}
+.user_advertisement table tr {
+    line-height:26px;
+}
+.user_advertisement table th, .user_advertisement table td {
+    padding:4px 7px;
+}
+.user_advertisement table th {
+    font-weight:bold;
+    color:#fff;
+}
+.user_advertisement table td a {
+    color:#738cde;
+}
+.user_advertisement table td a.red_link {
+    color:#ff0909;
+}
+.user_advertisement table td a:hover {
+    color:#707070;
+    text-decoration:underline;
+}
+.user_advertisement table .head {
+    background:#2c2c2c;
+}
+.actedit span {
+    width:12px;
+    height:12px;
+    background:url(../images/spritesheet.png) -273px -12px no-repeat;
+    display:inline-block;
+    margin:11px 8px 0 3px;
+    vertical-align:top;
+}
+.bitbuyadd {
+    width:auto;
+    background:#f0f0f0;
+    border:1px solid #c7c7c7;
+    padding:0 5px;
+    display:inline-block;
+    vertical-align:top;
+    color:#3455a4;
+    line-height:30px;
+    border-radius:5px;
+}
+.bitbuyadd:hover {
+    background:#e4e4e4;
+}
+.bitbuyadd span {
+    width:12px;
+    height:12px;
+    background:url(../images/spritesheet.png) -285px -12px no-repeat;
+    display:inline-block;
+    margin:11px 8px 0 3px;
+    vertical-align:top;
+}
+.actedit {
+    width:100%;
+    display:inline-block;
+    text-align:left;
+    font-size:14px;
+    line-height:35px;
+    color:#3455a4;
+}
+.user_advertisement table .button_buy {
+    background:url(../images/tr_buy_divider.png) left center no-repeat;
+}
+.bitadvertise {
+    width:100%;
+    text-align:right;
+    display:inline-block;
+    padding:5px 0;
+}
+/*-------------DASHBOARD PAGES CSS --------07-02-14---*/
+/*-------------WALLET SECTION PAGES CSS --------10-02-14---*/
+.wallet_section {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin:0 0 20px 0;
+    text-align:left;
+}
+.send_bitcoin {
+    width:49%;
+    display:inline-block;
+    vertical-align:top;
+}
+.send_bitcoin.right {
+    margin:0 0 0 15px;
+}
+.send_bitcoin_in {
+    width:95.5%;
+    padding:2%;
+    display:inline-block;
+    vertical-align:top;
+    background:#f8f8f8;
+    border-radius:5px;
+    border:1px solid #cdcdcd;
+}
+/*---------------WORKING ON 12-02-14--------*/
+.info_send {
+    width:100%;
+    display:inline-block;
+    padding:5px 0;
+    border-bottom:1px solid #f0f0f0;
+    margin:0 0 10px 0;
+}
+.info_send.user_info {
+	width:100%;
+	}
+.info_send span {
+    padding:7px 0;
+    display:inline-block;
+}
+.info_send span strong {
+    color:#2A4EA3;
+}
+.info_send p {
+    font-weight:bold;
+    line-height:22px;
+}
+.info_send p a {
+    color:#2A4EA3;
+}
+.info_send p a:hover {
+    text-decoration:underline;
+}
+.send_bitcoin_in .banner_form_data {
+    width:100%;
+    border:0 none;
+}
+.send_bitcoin_in .formdata fieldset input[type="text"], .send_bitcoin_in .formdata fieldset select {
+    background:#fff;
+    height:40px;
+    height:28px\0;
+}
+.send_bitcoin_in .bitadvertise {
+    text-align:left;
+    padding:0;
+}
+.send_bitcoin_in .formdata fieldset.button {
+    margin:0 0 10px 0;
+}
+.send_bitcoin_in .formdata fieldset .bitbuyadd span{
+    background:url(../images/spritesheet.png) -296px -12px no-repeat;
+    width:16px;
+    height:20px;
+    margin-top:5px;
+}
+.info_data {
+    width:96%;
+    padding:2%;
+    border:1px solid #e7e7e7;
+    border-radius:5px;
+    display:inline-block;
+    vertical-align:top;
+}
+/*---------------WORKING ON 12-02-14--------*/
+/*---------------TOGGLE SLIDER TABS 13-02-14--------*/
+.tabs_slide {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom:5px;
+}
+.tabs_slide a.toggle {
+    width:96%;
+    padding:2%;
+    display:inline-block;
+    vertical-align:top;
+    background:#f0f0f0;
+    color:#2A4EA3;
+    font-size:13px;
+}
+.tabs_slide a.toggle:hover {
+    background:#e7e7e7;
+}
+.tabs_slide a.toggle span {
+    width:11px;
+    height:11px;
+    display:inline-block;
+    vertical-align:top;
+    padding:0px;
+    margin:3px 5px 0 0;
+    background:url(../images/spritesheet.png) -342px -15px no-repeat;
+}
+.tabs_slide a.toggle.active span {
+    background:url(../images/spritesheet.png) -353px -15px no-repeat;
+}
+.tabs_data {
+    width:96%;
+    display:inline-block;
+    padding:2%;
+    background:#fff;
+    box-shadow:0 1px 2px 0 #999;
+    display:inline-block;
+}
+.tabs_data.active {
+    display:block\0;
+}
+.tabs_data p {
+    font-weight:normal;
+    font-size:12px;
+}
+.tabs_data .bitbuyadd span {
+    padding:0;
+}
+.wallet_transaction .date_coloum {
+    width:40%;
+}
+.invite_friend_in {
+    background:none;
+    border:0 none;
+    width:100%;
+    padding:0;
+}
+.invite_friends .wallet_section {
+    margin-top:10px;
+}
+.invite_friend_in .info_send p {
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.invite_friend_in .button button, #frm_upload_avatar_img .button button {
+    width:auto;
+    background:#f0f0f0;
+    border:1px solid #c7c7c7;
+    padding:0 5px;
+    display:inline-block;
+    vertical-align:top;
+    color:#3455a4;
+    line-height:30px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.invite_friend_in .button button:hover, #btn_trade_request:hover, #frm_upload_avatar_img .button button:hover, #sign_up:hover {
+    background:#e4e4e4;
+}
+.invite_friend_in .formdata fieldset.button {
+    text-align:left;
+}
+.invite_friend_in .formdata fieldset.button span {
+    width:15px;
+    height:12px;
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/spritesheet.png) -367px -14px no-repeat;
+    margin:9px 5px 0 0;
+}
+.invite_friend_in .page_head h5 {
+    font-size:22px;
+    line-height:30px;
+}
+.invite_friend_in .page_head {
+    border-bottom-color:#e4e4e4;
+}
+.confirm_colum {
+    width:20%;
+}
+.total_show td {
+    vertical-align:top;
+}
+.total_show td p {
+    text-align:right;
+}
+.user_profile .send_bitcoin {
+    margin-top:10px;
+}
+.user_profile .page_head {
+    border-bottom:0 none;
+}
+.user_profile .info_send {
+    border-bottom:0 none;
+}
+.info_fieldset {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.info_fieldset.greay {
+    background:#f3f3f3;
+}
+.info_fieldset.white {
+    background:#fff;
+}
+.info_fieldset .label, .info_fieldset .label_data {
+    width:46%;
+    width:44%\0;
+    padding:2% 2%;
+    float:left;
+    font-size:16px;
+}
+.label_data strong {
+    color:#3366CC;
+}
+#contact_message {
+    resize:none;
+    margin:10px;
+    width:95.5%;
+}
+.verify, not_verify, 
+.info_send .verify, .info_send .not_verify {
+    width:17px;
+    height:17px;
+    display:inline-block;
+    padding:0;
+    background:url(../images/spritesheet.png) -383px -14px no-repeat;
+    margin:0 5px 0 0;
+}
+.not_verify, .info_send .not_verify {
+    background-position:-400px -14px;
+}
+.user_trust {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    background:#3366CC;
+    color:#fff;
+    border:0 none;
+    border-radius:5px;
+    font-size:35px;
+    font-weight:bold;
+    margin:0 0 5px 0;
+    cursor:pointer;
+    line-height:40px;
+}
+.user_trust a {
+    color:#fff;
+}
+.info_send span a {
+    color:#3366CC;
+}
+.info_send span a:hover {
+    text-decoration:underline;
+}
+.comment span {
+    width:12px;
+    height:15px;
+    background:url(../images/spritesheet.png) -417px -14px no-repeat;
+    padding:0;
+    margin:0 5px 0 0;
+}
+/*---------------TOGGLE SLIDER TABS 13-02-14--------*/
+/*-------------WALLET SECTION PAGES CSS --------10-02-14---*/
+
+/*---------------EDIT PROFILE 13-02-14--------*/
+.edit_profile .send_bitcoin {
+    width:100%;
+}
+.edit_profile .tabs_slide a.toggle {
+    font-size:16px;
+    padding:1%;
+    width:98%;
+}
+.tabs_slide a.toggle span {
+    margin-top:4px;
+}
+.edit_profile .info_fieldset .label{
+    padding:1%;
+    width:40%;
+    font-size:13px;
+}
+.edit_profile .info_fieldset .label input[type="checkbox"]{
+    margin-right:5px;
+}
+.edit_profile .info_fieldset .label_data {
+    padding:1%;
+    width:56%;
+    font-size:13px;
+}
+.edit_profile .info_fieldset button {
+    width:auto;
+    background:#f0f0f0;
+    border:1px solid #c7c7c7;
+    padding:0 5px;
+    display:inline-block;
+    vertical-align:top;
+    color:#3455a4;
+    line-height:30px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.edit_profile .info_fieldset button:hover {
+    background:#e4e4e4;
+}
+.info_fieldset.formarea {
+    width:30%;
+}
+.info_fieldset.formarea textarea {
+    width:100%;
+    margin:10px 0px;
+    resize: vertical;
+}
+.send_bitcoin_in .change_pass .banner_form_data {
+    width:90%;
+    padding:5%;
+}
+.change_pass .formdata fieldset.button {
+    text-align:left;
+}
+.change_pass .user_info ul li {
+    list-style-type:disc;
+    margin:10px;
+}
+.label_txtarea .text-danger {
+    padding-left:10px;}
+/*---------------EDIT PROFILE 13-02-14--------*/
+/*---------------USER MENU HOVER SIGN BUTTONS------15-02-14- SD-*/
+.signup_link .menu ul ul {
+    display:none;
+    position:absolute;
+    right:0;
+    text-align:left;
+    background:#2A4EA3;
+    box-shadow:0 1px 3px 0 #283a67;
+    border-radius:0 0 5px 5px;
+    z-index:9999;
+}
+.signup_link .menu li.drops {
+    position:relative;	
+}
+.signup_link .menu li.drops a {
+    /*padding-bottom:7px;*/
+    display:inline-block;
+}
+.signup_link .menu ul ul li {
+    width:100%;
+    display:inline;
+    padding:0px;
+    line-height:25px;
+    margin:0px;
+}
+.signup_link .menu ul ul li a span {
+    width:16px;
+    height:16px;
+    margin:4px 5px 0px 5px;
+    float:left;
+}
+.signup_link .menu ul ul li a {
+    display:inline-block;
+    vertical-align:top;
+    padding:2px 0;
+    border-bottom:1px solid #284893;
+    width:100%;
+}
+span.dashboard {
+    background:url(../images/spritesheet.png) -427px -16px no-repeat;
+}
+span.profile_public {
+    background:url(../images/spritesheet.png) -475px top no-repeat;
+}
+span.edit_profile {
+    background:url(../images/spritesheet.png) -427px top no-repeat;
+}
+span.trusted {
+    background:url(../images/spritesheet.png) -444px top no-repeat;
+}
+span.logout {
+    background:url(../images/spritesheet.png) -460px top no-repeat;
+}
+.formdata fieldset label.text-danger, label.text-danger {
+    color:#ff0000;
+    margin-top:5px;
+}
+.text-danger.checked {
+    bottom: -20px;
+    display: inline-block;
+    position: absolute;
+    width: 94%;
+}
+.check_error {
+    position:relative;
+}
+.alert-success {
+    margin:10px 0;
+    background:#096;
+    color:#fff;
+    padding:10px 0;
+    border-radius:5px;
+    border:1px solid #fff;
+    box-shadow:0 1px 3px 0 #063;
+    position:relative;
+}
+.alert-error {
+    margin:10px 0;
+    background:#e44025;
+    color:#fff;
+    padding:10px 0;
+    border-radius:5px;
+    border:1px solid #fff;
+    box-shadow:0 1px 3px 0 #063;
+    position:relative;
+}
+.alert .close {
+    width:20px;
+    height:20px;
+    background:#fff;
+    box-shadow:0 1px 2px 0 #666;
+    border-radius:50%;
+    position:absolute;
+    display:inline-block;
+    top:-10px;
+    color:#ff0000;
+    font-size:15px;
+    line-height:20px;
+    text-align:center;
+    right:-5px;
+}
+/*----.signup_link .menu ul ul-----------USER MENU HOVER SIGN BUTTONS------15-02-14- SD--*/
+.cms_text ol, .cms_text ul, .cms_text ol li, .cms_text ul li {
+    list-style-type:inherit;
+
+}
+.cms_text ol, .cms_text ul {
+    margin-left:20px;
+    line-height:30px;
+}
+
+/*------------------------------POST A TRADE PAGES CSS-----*/
+.post_trade .send_bitcoin {
+    width:100%;
+    margin-bottom:10px;
+}
+.info_small_icn {
+    width:5px;
+    height:10px;
+    background:url(../images/spritesheet.png) -443px -16px no-repeat;
+}
+.info_send span.info_small_icn {
+    padding:0 5px 0 0;
+}
+.post_trade .formdata {
+    padding:10px 0 0 0;
+}
+.post_trade .formdata fieldset label {
+    width:28%;
+}
+.post_trade .send_bitcoin_in .formdata fieldset input[type="text"], .post_trade .send_bitcoin_in .formdata fieldset select {
+    width:28%;
+}
+.post_trade .formdata .info_data {
+    width:40%;
+    padding:0 1%;
+    border:0 none;
+}
+.post_trade .send_bitcoin_in .banner_form_data {
+    background:none;
+}
+.post_trade .tex_data {
+    width:28%;
+    display:inline-block;
+    vertical-align:top;
+}
+.post_trade input[type="radio"] {
+    margin-right:5px;
+}
+.tex_data .inner_div {
+    width:100%;
+    padding:0 0 7px 0;
+}
+.post_trade .formdata .info_data p {
+    font-size:13px;
+    line-height:20px;
+}
+.post_trade .formdata .info_data p em {
+    margin-bottom:5px;
+}
+.post_trade .formdata fieldset {
+    margin-bottom:20px;
+}
+.post_trade .send_bitcoin_in .formdata fieldset .tex_data input[type="text"], .post_trade .formdata textarea{
+    width:100%;
+    max-width:100%;
+}
+.post_trade .send_bitcoin_in .formdata fieldset .small_input input[type="text"] {
+    width:30%;
+    border-radius:5px 0 0 5px;
+    float:left;
+}
+.small_input .greay_btn {
+    border: 1px solid #C6C6C6;
+    border-left:0 none;
+    height:38px;
+    font-size:16px;
+    line-height:38px;
+    float:left;
+    border-radius:0 5px 5px 0;
+    color:#666666;
+    background:#f0f0f0;
+    padding:0 5px;
+}
+/*------------------------------POST A TRADE PAGES CSS-----*/
+/*---------------------------CHAT PAGE CSS ------*/
+.message_box {
+    background:#e8ecf1;
+    padding:1%;
+    display:inline-block;
+    vertical-align:top;
+    width:98%;
+    border-radius:10px;
+}
+.chat .banner_form_data ul {
+    margin:10px;
+}
+.chat .banner_form_data p {
+    margin:10px 0 0 0;
+}
+.chat .banner_form_data a {
+    color:#2A4EA3;
+}
+.chat .banner_form_data a:hover {
+    text-decoration:underline;
+}
+.chat .banner_form_data ul li {
+    list-style-type:disc;
+    line-height:25px;
+}
+/*---------------------------CHAT PAGE CSS ------*/
+/*--------------------POST TRADE INNER PAGES------*/
+.post_trade_inner .page_head {
+    margin-bottom:10px;
+}
+.post_trade_inner .page_head span {
+    font-size:20px;
+    color:#707070;
+    vertical-align:top;
+    line-height:35px;
+    margin:0 0 0 20px;
+}
+.post_trade_inner textarea {
+    width:100%;
+    resize:vertical;
+}
+.info_blue {
+    width:13px;
+    height:10px;
+    display:inline-block;
+    vertical-align:top;
+    margin:6px 5px 0 0;
+    background:url(../images/spritesheet.png) -448px -16px no-repeat;
+}
+.info_send .info_blue {
+    padding:0;
+}
+span span.info_blue {
+    margin-top:3px;
+}
+
+element.style {
+    color: #B62325;
+}
+p.fundtext {
+    font-size: 16px;
+    line-height: 150%;
+}
+body {
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+html {
+    font-size: 100%;
+}
+.post_trade_inner .page_head span.lock_icon {
+    width:30px;
+    height:25px;
+    background:url(../images/spritesheet.png) -312px -26px no-repeat;
+    float:right;
+    cursor:pointer;
+}
+.post_trade_inner .page_head span.lock_icon:hover {
+    opacity:0.8;
+}
+.bitbuyadd span.print_icon {
+    width:13px;
+    height:12px;
+    padding:0px;
+    background:url(../images/spritesheet.png) -342px -26px no-repeat;
+}
+.bitbuyadd.cancel {
+    background:#cc3e3e;
+    color:#fff;
+    padding:0 10px;
+    transition:all 300ms;
+}
+.bitbuyadd.cancel:hover {
+    text-shadow: 0 1px 2px #581717;
+    box-shadow:0 1px 3px 0 #581717;
+}
+.message_box.red {
+    background:#f0d0d0;
+    margin:10px 0;
+}
+.message_box.red p {
+    color:#da2020;
+    font-weight:normal;
+}
+.message_box.green {
+    background:#DFF0D8;
+    margin:10px 0;
+}
+.info_send span.red_close_icon{
+    background:url(../images/spritesheet.png) -342px -38px no-repeat;
+    width:11px;
+    height:11px;
+    padding:0;
+    margin:5px;
+    vertical-align:top;
+}
+.terms_info {
+    padding:2%;
+    width:98%;
+    display:inline-block;
+}
+.terms_info .page_head h5 {
+    font-size:18px;
+}
+.terms_info .page_head {
+    width:97%;
+    padding:0 0 5px 0;
+    margin:0 0 10px 0;
+}
+.terms_info ul li {
+    list-style-type:disc;
+    margin:0 0 0 2%;
+    width:96%;
+    line-height:22px;
+}
+/*--------------------POST TRADE INNER PAGES------*/
+/*--------------------CONTACT PAGE CSS----=-------*/
+.contact .send_bitcoin_in, .contact .banner_form_data {
+    background:none;
+    border:0 none;
+}
+.contact.post_trade .formdata fieldset .tex_data label{
+    width:100%;
+    font-size:12px;
+}
+.contact .formdata fieldset.button {
+    text-align:left;
+}
+#btn_trade_request, #sign_up {
+    width:auto;
+    background:#f0f0f0;
+    border:1px solid #c7c7c7;
+    padding:0 5px;
+    display:inline-block;
+    vertical-align:top;
+    color:#3455a4;
+    line-height:30px;
+    border-radius:5px;
+    cursor:pointer;
+    margin:10px;
+}
+/*--------------------CONTACT PAGE CSS----=-------*/
+/*-------------------- PAGINATION CSS -----------------------*/
+.last_btn_sec{
+    width:98%;
+    display:inline-block;
+    text-align:right;
+    margin:10px 10px 10px 0;
+}
+.pagenBox {
+    background:#f0f0f0;
+    display:inline-block;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-border-radius:3px;
+    box-shadow:0 1px 2px 0 #ddd;
+}
+.left_scroll_img{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+}
+.left_scroll_img img, .right_scroll_img img{
+    vertical-align:top;
+}
+.pagenBox .left_scroll_img  a, .pagenBox .right_scroll_img  a {
+    /*padding:0;*/
+}
+.right_scroll_img{
+    display:inline-block;
+    vertical-align:middle;
+}
+.pagen{
+    display:inline-block;
+    margin-right:5px;
+}
+.pagenBox a{
+    padding:4px 8px 5px 8px;
+    color:#363636;
+    display:inline-block;
+}
+.pagenBox a:hover{
+    background:#f9f9f9 !important;	
+}
+.pagenBox strong a{
+    background:#369DF4 !important;
+    color:#fff;
+}
+.pagenBox strong a:hover{
+    background:#f9f9f9 !important;
+    color:#363636;
+}
+.pagenBox strong{
+    margin-left:5px;
+    display:inline-block;
+}
+/*-------------------- PAGINATION CSS -----------------------*/
+/*-------------------FORUMS PAGE CSS -- 18-03-2014--SANTOSH--*/
+.forums {
+    padding-top:20px;
+}
+.invite_friends .forums {
+    margin:0 0 20px 0;
+}
+.forums_header {
+    width:100%;
+    float:left;
+    height:auto;
+}
+.forums_header ul {
+    display:inline-block;
+    width:auto;
+}
+.forums_header ul li {
+    display:inline-block;
+    padding:0 20px;
+}
+.forums_header ul li a {
+    color:#707070;
+    line-height:40px;
+    float:left;
+}
+.forums_header ul li a:hover {
+    color:#000;
+}
+.forums_header .feed_home {
+    width:20px;
+    height:20px;
+    background:url(../images/spritesheet.png) -375px -32px no-repeat;
+    float:left;
+    margin:8px 10px 0 0;
+}
+.forums_header .feed_all {
+    width:20px;
+    height:20px;
+    background:url(../images/spritesheet.png) -355px -32px no-repeat;
+    float:left;
+    margin:8px 10px 0 0;
+}
+.search_forums {
+    width:300px;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:80px;
+}
+.search_forums input[type='text']{
+    padding-left:40px;
+    background:#fff url(../images/forums_search.png) left top no-repeat;
+}
+.forums_content {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    padding:5px 0 0 0;
+}
+.forum_left_content {
+    width:78%;
+    float:left;
+}
+.forum_right_content {
+    width:20%;
+    float:right;
+}
+.forum_right_content .data {
+    width:100%;
+    display:inline-block;
+    margin-bottom:20px;
+}
+.forum_right_content .data .head {
+    font-size:18px;
+    color:#707070;
+    margin:0 0 5px 0;
+}
+.forum_right_content .data ul li {
+    line-height:24px;
+}
+.forum_right_content .data ul li a {
+    color:#1D356F;
+}
+.forum_right_content .data ul li a span {
+    width:16px;
+    height:16px;
+    float:left;
+    margin: 4px 5px 0;
+}
+.forum_right_content .data ul li a:hover {
+    color:#9b9b9b;
+}
+.forum_list {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+.forum_post {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    padding:10px 0;
+    border-bottom:1px solid #dbdbdb;
+}
+.forum_post .user_image {
+    width:50px;
+    height:50px;
+    border:2px solid #fff;
+    box-shadow:0 1px 3px 0 #dbdbdb;
+    float:left;
+}
+.user_info, .post_u_name, .post_time, .post_discussion, .post_social_links, .user_info span {
+    float:left;
+    width:auto;	
+    margin:0 5px;
+}
+.post_time, .post_discussion {
+    color:#3366CC;
+    font-weight:bold;	
+}
+.post_social_links ul li {
+    display:inline-block;
+}
+.post_social_links .comment, .post_social_links .like, .post_social_links .view, .post_social_links .info {
+    width:20px;
+    height:20px;
+    float:left;
+    cursor:pointer;
+}
+.post_social_links .count {
+    float:left;
+    margin:0;
+}
+.post_social_links .comment {
+    background:url(../images/spritesheet.png) -395px -32px no-repeat;
+}
+.post_social_links .like {
+    background:url(../images/spritesheet.png) -435px -32px no-repeat;
+}
+.post_social_links .view {
+    background:url(../images/spritesheet.png) -415px -32px no-repeat;	
+}
+.post_social_links .info {
+    background:url(../images/spritesheet.png) -475px -32px no-repeat;	
+}
+.post_social_links .view:hover {
+    background:url(../images/spritesheet.png) -455px -32px no-repeat;
+}
+.forums_posted {
+    padding:5px 0 10px 0;
+}
+.forum_title {
+    width:90%;
+    float:left;
+    min-width:60%;
+    padding-left:10px;
+    font-size:20px;
+    color:#3366CC;
+    font-weight:bold;
+    cursor:pointer;
+}
+.user_comments {
+    width:92%;
+    float:right;
+    margin:10px 0;
+}
+.user_post_comment {
+    width:100%;
+    float:left;
+    padding:0 0 10px 0;
+}
+.user_comment_data {
+    display:inline-block;
+    width:100%;
+    padding-bottom:10px;
+    font-size:12px;
+}
+.user_post_comment .user_comment_data {
+    width:91%;
+    float:right;
+}
+.user_comment_data a {
+    margin:0 10px;
+    color:#3366CC;
+}
+.user_comment_data a:hover {
+    color:#707070;
+}
+.total_comment, .add_topic_in_forum_bottom input[type='button'], .btn_post {
+    width:auto;
+    padding:5px 10px;
+    float:left;
+    border-radius:15px;
+    background:#3366CC;
+    color:#fff;
+    margin:10px 0;
+    cursor:pointer;
+    border:0px none;
+    transition:all 300ms linear 200ms;
+}
+.total_comment:hover, .add_topic_in_forum_bottom input[type='button']:hover, .btn_post:hover {
+    background:#0c3689;
+}
+.forum_right_content .data.online_user ul {
+    display:inline-block;
+}
+.forum_right_content .data.online_user li {
+    width:auto;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.online_user .total_comment{
+    float:right;
+    margin:0 0 10px 0;
+}
+#select_forum {
+    float:left;
+    margin:10px 10px 0 0;
+    height:27px;
+    padding:5px 0 0 5px;
+    text-align:left;
+}
+.add_topic_in_forum_bottom {
+    width:auto;
+    float:right;
+    display:inline-block;
+    margin:5px 0;
+    text-align:right;
+}
+.two_displaying {
+    background:#fff;
+    width:96%;
+    float:left;
+    border-radius:5px;
+    box-shadow:0 0 3px #6188da;
+    padding:0 2%;
+}
+
+.two_displaying input[type="text"]{
+    border:0 none;
+    background:none;
+    border-radius:0;
+}
+.two_displaying input[type="text"]:focus {
+    box-shadow:none;
+}
+#add_forum_topic_title {
+    border-bottom:1px solid #c1c1c1;
+}
+.change_profile_image {
+    width:30%;
+    float:left;
+    text-align:left;
+}
+.change_forum .page_head {
+    border-bottom:0 none;
+}
+.change_forum .page_head h2 {
+    line-height:60px;
+}
+.change_profile_image p {
+    font-size:16px;
+    line-height:30px;
+}
+.post_trade .formdata fieldset label.text-danger {
+    width: 100%;
+}
+#show_advance_options select {
+
+    width: 100%;
+}
+#view_more {
+    background:none;
+    border:0 none;
+    color:#fff;
+    font-size:18px;
+}
+/*-------------------FORUMS PAGE CSS -- 18-03-2014--SANTOSH--*/
+.share_links {
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    font-size:16px;
+    margin:10px 0 0 0;
+}
+.all_share_links {
+    width: 100%;
+    display: inline-block;
+}
+.twitter_s {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 0 0 0;
+}
+#___plus_0 {
+    display: inline-block !important;
+    vertical-align: top !important;
+    padding: 8px 0 0 0 !important;
+}
+.sign_up .label {
+    width:96%;
+}
+
+/*added on 3/4/2014 */
+.btn_post{ padding: .4em 1.5em; border-radius: 3em; font-size: 105%; line-height: 1; color: white; text-align: center; background-color: #3366CC;cursor: pointer;border: 0;text-decoration: none;display: inline-block;margin-top: 6px;margin-left: 585px;}
+
+/* 26-05-2014 */
+#alert_info {
+background-color:#D9EDF7;
+}
+
+/* 07-06-14 added by pranav*/
+.clickable tr:hover {
+	background:none repeat scroll 0 0 #EEEFFF;
+	cursor:pointer;
+}
+.well {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin: 20px 0;
+    min-height: 20px;
+    padding: 19px;
+}
+#loader{
+	display:none;
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:url("../images/loader_img.GIF") 50% 50%  no-repeat;    
+}
+table tr label {
+    display: block;    
+}
+table tr.green_row {
+    background:none repeat scroll 0 0 #90EE90;
+}
+table tr.red_row {
+    background:none repeat scroll 0 0 #F08080;
+}
+.label-warning {
+	background-color: #F89406;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 9px;
+    padding: 5px;
+}
+
+.icon-circle:before {
+    content: "";
+}
+.online-status {
+    font-size: 70%;
+    text-shadow: 0 0 1px rgba(66, 66, 66, 0.5);
+    vertical-align: super;
+}
+.online-status-recent {
+	background: none repeat scroll 0 0 #DDDD88;
+    border-radius: 50%;
+    color: #DDDD88;
+}
+.online-status-offline {
+	background: none repeat scroll 0 0 #CCCCCC;
+    border-radius: 50%;
+    color: #CCCCCC;
+}
+.online-status-online {
+	background: none repeat scroll 0 0 #AAFFAA;
+    border-radius: 50%;
+    color: #AAFFAA;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
